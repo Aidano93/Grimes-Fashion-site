@@ -1,10 +1,10 @@
 # CPNT262-FINAL: Group Project - Deployed Product/Services Website
 
 ## Team Members
-[Makayla Martineau Raymundo](https://github.com/MakaylaMR)
-[Joel Kaye](https://github.com/kayej22)
-[Dustin Shulz](https://github.com/cowtowndusty)
-[Aidan O'Reilly](https://github.com/Aidano93)
+- [Makayla Martineau Raymundo](https://github.com/MakaylaMR)
+- [Joel Kaye](https://github.com/kayej22)
+- [Dustin Shulz](https://github.com/cowtowndusty)
+- [Aidan O'Reilly](https://github.com/Aidano93)
 
 
 - [GH Repo](https://github.com/cowtowndusty/cpnt262-FINAL)

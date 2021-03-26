@@ -7,9 +7,12 @@ const gallerySchema = new mongoose.Schema(
     id: Number,
     title: String,
     description: String,
-    imgSrc: String,
     width: Number,
-    height: Number
+    height: Number,
+    pathURL: String,
+    credit: String,
+    creditURL: String,
+    imageSrc: String
   }
 )
 

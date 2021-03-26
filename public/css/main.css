@@ -56,7 +56,7 @@ nav a:hover {
   display: -ms-grid;
   display: grid;
   text-align: center;
-  margin: auto;
+  margin: 0.5rem;
   padding: 0.5rem;
   min-height: 50vh;
   -webkit-box-align: center;
@@ -68,7 +68,7 @@ nav a:hover {
 /* splash page */
 .pageheader {
   /* change default behaviour of `margin: auto` below */
-  background-image: url("/images/hao-wang-pVq6YhmDPtk-unsplash-blur.jpg");
+  background-image: url("../images/hao-wang-pVq6YhmDPtk-unsplash-blur.jpg");
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
@@ -129,11 +129,42 @@ margin-right: auto;
   padding: 0.5rem;
 }
 
-.hero p {
+.hero h2 {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
   margin: 0;
+}
+
+figure {
+  display: -ms-grid;
+  display: grid;
+}
+
+figure h2 {
+  grid-area: name;
+}
+
+figure h3 {
+  grid-area: title;
+}
+
+figure a {
+  grid-area: image;
+}
+
+figure a:hover {
+  color: #F29E28;
+  opacity: 0.5;
+}
+
+figure a img {
+  grid-area: image;
+  width: 100%;
+}
+
+figure figcaption {
+  grid-area: bio;
 }
 
 footer {

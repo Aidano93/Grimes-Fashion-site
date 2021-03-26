@@ -68,7 +68,7 @@ nav a:hover {
 /* splash page */
 .pageheader {
   /* change default behaviour of `margin: auto` below */
-  background-image: url("/images/hao-wang-pVq6YhmDPtk-unsplash-blur.jpg");
+  background-image: url("../images/hao-wang-pVq6YhmDPtk-unsplash-blur.jpg");
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;

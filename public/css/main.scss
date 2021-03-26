@@ -62,7 +62,7 @@ nav {
     color: $dark-colour;
 
     &:hover {
-      background-color: rgb(153, 128, 102);
+      background-color: $accent-colour;
     }
   }
 }
@@ -80,6 +80,8 @@ nav {
 
   align-items: center;
 
+  border-bottom: 2px solid $dark-colour;
+
   h1 {
     margin: 0;
 
@@ -87,6 +89,8 @@ nav {
   }
 
   p {
+    align-self: start;
+
     margin: 0;
   }
 }

@@ -7,7 +7,8 @@ module.exports = [
     height: 4898, 
     pathURL: 'https://unsplash.com/photos/CTz3o-IqeoI',
     credit: 'Roman Shilin',
-    creditURL: 'https://unsplash.com/@romashilin'
+    creditURL: 'https://unsplash.com/@romashilin',
+    imageSrc: '../../public/images/unsplash/albert-vincent-wu-SnAy-Tdn4tM-unsplash.jpg',
   },
 
   {
@@ -18,7 +19,8 @@ module.exports = [
     height: 4096, 
     pathURL: 'https://unsplash.com/photos/W-7k72ThEr0',
     credit: 'Laura Chouette',
-    creditURL: 'https://unsplash.com/@laurachouette'
+    creditURL: 'https://unsplash.com/@laurachouette',
+    imageSrc: '../../public/images/unsplash/duane-mendes-UIyzjfekpQ4-unsplash.jpg',
   },
 
   {
@@ -29,7 +31,8 @@ module.exports = [
     height: 7952,
     pathURL: 'https://unsplash.com/photos/E-hXjz5O3Zk',
     credit: 'Graham Mansfield',
-    creditURL: 'https://unsplash.com/@grahammansfield1'
+    creditURL: 'https://unsplash.com/@grahammansfield1',
+    imageSrc: '../../public/images/unsplash/graham-mansfield-E-hXjz5O3Zk-unsplash.jpg',
   },
 
   {
@@ -40,7 +43,8 @@ module.exports = [
     height: 6016,
     pathURL: 'https://unsplash.com/photos/E6PWA9GvIBU',
     credit: 'Houcine Ncib',
-    creditURL: 'https://unsplash.com/@houcinencibphotography'
+    creditURL: 'https://unsplash.com/@houcinencibphotography',
+    imageSrc: '../../public/images/unsplash/houcine-ncib-E6PWA9GvIBU-unsplash.jpg',
   },
 
   {
@@ -51,7 +55,8 @@ module.exports = [
     height: 6000,
     pathURL: 'https://unsplash.com/photos/g4K9KyHGDEc',
     credit: 'Omid Armin',
-    creditURL: 'https://unsplash.com/@omidarmin'
+    creditURL: 'https://unsplash.com/@omidarmin',
+    imageSrc: '../../public/images/unsplash/jon-tyson-X4BHXXbaFj4-unsplash.jpg',
   },
 
   {
@@ -62,7 +67,8 @@ module.exports = [
     height: 5200,
     pathURL: 'https://unsplash.com/photos/3OG8ywzgjJY',
     credit: 'Tyler Nix',
-    creditURL: 'https://unsplash.com/@jtylernix'
+    creditURL: 'https://unsplash.com/@jtylernix',
+    imageSrc: '../../public/images/unsplash/joshua-rondeau-ohWlGF9wokg-unsplash(1).jpg',
   },
 
   {
@@ -73,7 +79,8 @@ module.exports = [
     height: 3181,
     pathURL: 'https://unsplash.com/photos/UIyzjfekpQ4',
     credit: 'Duane Mendes',
-    creditURL: 'https://unsplash.com/@duanemendes'
+    creditURL: 'https://unsplash.com/@duanemendes',
+    imageSrc: '../../public/images/unsplash/laura-chouette-W-7k72ThEr0-unsplash.jpg',
   },
 
   {
@@ -84,7 +91,8 @@ module.exports = [
     height: 5000,
     pathURL: 'https://unsplash.com/photos/ohWlGF9wokg',
     credit: 'Joshua Rondeau',
-    creditURL: 'https://unsplash.com/@liferondeau'
+    creditURL: 'https://unsplash.com/@liferondeau',
+    imageSrc: '../../public/images/unsplash/omid-armin-g4K9KyHGDEc-unsplash.jpg',
   },
 
   {
@@ -95,7 +103,8 @@ module.exports = [
     height: 5841,
     pathURL: 'https://unsplash.com/photos/SnAy-Tdn4tM',
     credit: 'Albert Vincent Wu',
-    creditURL: 'https://unsplash.com/@albertvincentwu'
+    creditURL: 'https://unsplash.com/@albertvincentwu',
+    imageSrc: '../../public/images/unsplash/roman-shilin-CTz3o-IqeoI-unsplash.jpg',
   },
 
   {
@@ -106,7 +115,8 @@ module.exports = [
     height: 7952,
     pathURL: 'https://unsplash.com/photos/OjgLBz7znRE',
     credit: 'Sarah Khan',
-    creditURL: 'https://unsplash.com/@itssarahkhan'
+    creditURL: 'https://unsplash.com/@itssarahkhan',
+    imageSrc: '../../public/images/unsplash/sarah-khan-OjgLBz7znRE-unsplash.jpg',
   },
 
   {
@@ -117,7 +127,8 @@ module.exports = [
     height: 3456,
     pathURL: 'https://unsplash.com/photos/X4BHXXbaFj4',
     credit: 'Jon Tyson',
-    creditURL: 'https://unsplash.com/@jontyson'
+    creditURL: 'https://unsplash.com/@jontyson',
+    imageSrc: '../../public/images/unsplash/sour-moha-tSP10XOSIAQ-unsplash.jpg',
   },
 
   {
@@ -128,6 +139,7 @@ module.exports = [
     height: 6663,
     pathURL: 'https://unsplash.com/photos/tSP10XOSIAQ',
     credit: 'sour moha',
-    creditURL: 'https://unsplash.com/@sour_moha'
+    creditURL: 'https://unsplash.com/@sour_moha',
+    imageSrc: '../../public/images/unsplash/tyler-nix-3OG8ywzgjJY-unsplash.jpg',
   }
 ];

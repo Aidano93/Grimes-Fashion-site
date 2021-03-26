@@ -26,5 +26,5 @@ module.exports = [
     title: 'Tony\'s Fantastic Four',
     bio: 'Current student at SAIT taking the Web Developing Program. If you need a beautiful and accessible website, I\'m your gal.',
     github: 'https://github.com/MakaylaMR'
-  },
+  }
 ]

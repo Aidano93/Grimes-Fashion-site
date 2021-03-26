@@ -72,7 +72,7 @@ nav {
 
   text-align: center;
 
-  margin: auto;
+  margin: 0.5rem;
 
   padding: 0.5rem;
 
@@ -88,11 +88,55 @@ nav {
     padding: 0.5rem;
   }
 
-  p {
+  h2 {
     align-self: start;
 
     margin: 0;
   }
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+}
+
+figure {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "image"
+    "name"
+    "title"
+    "bio";
+
+  h2 {
+    grid-area: name;
+  }
+
+  h3 {
+    grid-area: title;
+  }
+
+  a {
+    grid-area: image;
+
+    &:hover {
+      color: $accent-colour;
+      opacity: 0.5;
+    }
+
+    img {
+      grid-area: image;
+
+      width: 100%;
+    }
+  }
+
+  figcaption {
+    grid-area: bio;
+  }
+
 }
 
 footer {

@@ -65,65 +65,6 @@ nav a:hover {
   border-bottom: 2px solid #000;
 }
 
-/* splash page */
-.pageheader {
-  /* change default behaviour of `margin: auto` below */
-  background-image: url("../images/hao-wang-pVq6YhmDPtk-unsplash-blur.jpg");
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: center;
-  
-  margin-top: 100px;
-  
-  min-height: 50vh;
-}
-
-button {
-  display: block;
-  
-  height: 50px;
-  width: 300px;
-  background:red;
-  color: white;
-  
-  border: 2px solid rgba(33, 68, 72, 0.59);
-  border-radius: 50px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  
-  font-size: 1.5rem;
-  padding: 0px;
-}
-/* logo styles */
-.logotext {
-width: 25%; height: auto;
-margin-right: 10px;
-filter: invert(82%) sepia(34%) saturate(5962%) hue-rotate(344deg) brightness(104%) contrast(90%);
-margin-left: auto;
-margin-right: auto;
-
-}
-
-.tagline {
-  margin: 20px;
-  font-size:  32px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-}
-
-.logo {
-  width: 25%; height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3rem;
-  }
-  .splash {
-    width:100%; /* you can use % */
-    height: auto;
-  }
 
 .hero h1 {
   margin: 0;

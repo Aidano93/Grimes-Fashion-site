@@ -1,4 +1,4 @@
-# CPNT 262: Node Final Group Project - Deployed Product/Services Website
+# CPNT262-FINAL: Group Project - Deployed Product/Services Website
 
 ## Team Members
 [Makayla Martineau Raymundo](https://github.com/MakaylaMR)

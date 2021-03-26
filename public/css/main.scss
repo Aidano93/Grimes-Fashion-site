@@ -95,8 +95,20 @@ nav {
   }
 }
 
+section {
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+}
+
 figure {
   display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "image"
+    "name"
+    "title"
+    "bio";
 
   h2 {
     grid-area: name;

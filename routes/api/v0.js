@@ -8,15 +8,25 @@ const router = express.Router();
 
 
 //gallery JSON
-router.get('/gallery', (req, res) => {
-  Gallerie.find({}, (err, images) => {
-    if (err) {
-      res.status(404)
-    
-    }
-    res.json(images)
-  })
+router.get('/gallery', async (req, res, next) => {
+  try {
+    // return next(new Error("Boom Goes The Dynamite - Something Exploded")) // Error handling test
+    const gallery = await Gallerie.find({})
+    if (gallery) return res.json(gallery)
+    return next(new Error("Unable to locate images."))
+  } catch(err) {
+    return next(err)
+  }
 })
+// router.get('/gallery', (req, res) => {
+//   Gallerie.find({}, (err, images) => {
+//     if (err) {
+//       res.status(404)
+    
+//     }
+//     res.json(images)
+//   })
+// })
 
 //team members JSON
 router.get('/members', (req, res) => {

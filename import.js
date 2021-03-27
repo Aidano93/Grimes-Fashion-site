@@ -12,9 +12,9 @@ const Subscriber = require(`./models/Subscriber`);
 Gallery.insertMany(galSeed, function(error, animal) {
   console.log('Data import completed.')
 });
-Member.insertMany(memSeed, function(error, animal) {
-  console.log('Data import completed.')
-});
-Subscriber.insertMany(subSeed, function(error, animal) {
-  console.log('Data import completed.')
-});
+// Member.insertMany(memSeed, function(error, animal) {
+//   console.log('Data import completed.')
+// });
+// Subscriber.insertMany(subSeed, function(error, animal) {
+//   console.log('Data import completed.')
+// });

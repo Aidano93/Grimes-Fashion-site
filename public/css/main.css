@@ -224,6 +224,11 @@ form {
 }
 
 /* SINGLE IMAGE */
+.main {
+  display: -ms-grid;
+  display: grid;
+}
+
 .main .single-card {
   display: -ms-grid;
   display: grid;

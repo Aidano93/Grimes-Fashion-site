@@ -236,6 +236,8 @@ form {
 /* SINGLE IMAGE */
 
 .main {
+  display: grid;
+
   .single-card {
     display: grid;
     justify-self: center;

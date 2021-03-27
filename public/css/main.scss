@@ -111,7 +111,7 @@ footer {
 
 /* MEMBER PAGE */
 
-section {
+.member {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(736px, 1fr));
 }
@@ -168,93 +168,6 @@ figure {
 
 }
 
-@media screen and (max-width: 42.7rem) {
-  ul {
-    display: block;
-
-    text-align: center;
-
-    padding: 1rem;
-
-    li {
-
-      padding: 0.5rem;
-    }
-  }
-
-  .nav-wrapper [type=checkbox] {
-    display: none;
-  }
-
-  .nav-menu {
-    display: none;
-  }
-
-  #toggle:checked~*~.nav-menu {
-    display: block;
-  }
-
-  #hamburger {
-    z-index: 1;
-
-    padding-right: 0.7rem;
-    padding-top: 0.5rem;
-
-    cursor: pointer;
-  }
-
-  label {
-    position: absolute;
-
-    display: inline-block;
-
-    right: 0;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  figure {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "image"
-      "name"
-      "title"
-      "bio";
-    justify-self: center;
-
-    h2 {
-      grid-area: name;
-    }
-
-    h3 {
-      grid-area: title;
-    }
-
-    a {
-      display: grid;
-      grid-area: image;
-
-      &:hover {
-        color: $accent-colour;
-        opacity: 0.5;
-      }
-
-      img {
-        grid-area: image;
-
-        max-width: 40%;
-
-        justify-self: center;
-      }
-    }
-
-    figcaption {
-      grid-area: bio;
-    }
-  }
-}
 
 /* SUBSCRIBE PAGE */
 
@@ -297,7 +210,7 @@ form {
 
   p {
     grid-area: label;
-    font-weight: 500;
+
     justify-self: center;
   }
 
@@ -308,5 +221,129 @@ form {
 
   button {
     grid-area: button;
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 42.7rem) {
+
+  /* HAMBURGER MENU */
+  ul {
+    display: block;
+
+    text-align: center;
+
+    padding: 1rem;
+
+    li {
+
+      padding: 0.5rem;
+    }
+  }
+
+  .nav-wrapper [type=checkbox] {
+    display: none;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  #toggle:checked~*~.nav-menu {
+    display: block;
+  }
+
+  #hamburger {
+    z-index: 1;
+
+    padding-right: 0.7rem;
+    padding-top: 0.5rem;
+
+    cursor: pointer;
+  }
+
+  label {
+    position: absolute;
+
+    display: inline-block;
+
+    right: 0;
+  }
+
+  /* SUBSCRIBE */
+
+  form {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "label"
+      "input"
+      "button";
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+
+    p {
+      grid-area: label;
+
+      justify-self: center;
+    }
+
+    input {
+      grid-area: input;
+    }
+
+    button {
+      grid-area: button;
+    }
+  }
+}
+
+@media screen and (max-width: 736px) {
+
+  /* TEAM/MEMBER */
+
+  figure {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "image"
+      "name"
+      "title"
+      "bio";
+    justify-self: center;
+
+    h2 {
+      grid-area: name;
+    }
+
+    h3 {
+      grid-area: title;
+    }
+
+    a {
+      display: grid;
+      grid-area: image;
+
+      &:hover {
+        color: $accent-colour;
+        opacity: 0.5;
+      }
+
+      img {
+        grid-area: image;
+
+        max-width: 40%;
+
+        justify-self: center;
+      }
+    }
+
+    figcaption {
+      grid-area: bio;
+    }
   }
 }

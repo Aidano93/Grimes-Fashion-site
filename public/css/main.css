@@ -91,7 +91,7 @@ footer p {
 }
 
 /* MEMBER PAGE */
-section {
+.member {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(736px, 1fr))[auto-fit];
@@ -159,85 +159,6 @@ figure figcaption {
   grid-area: bio;
 }
 
-@media screen and (max-width: 42.7rem) {
-  ul {
-    display: block;
-    text-align: center;
-    padding: 1rem;
-  }
-  ul li {
-    padding: 0.5rem;
-  }
-  .nav-wrapper [type=checkbox] {
-    display: none;
-  }
-  .nav-menu {
-    display: none;
-  }
-  #toggle:checked ~ * ~ .nav-menu {
-    display: block;
-  }
-  #hamburger {
-    z-index: 1;
-    padding-right: 0.7rem;
-    padding-top: 0.5rem;
-    cursor: pointer;
-  }
-  label {
-    position: absolute;
-    display: inline-block;
-    right: 0;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  figure {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-        grid-template-areas: "image" "name" "title" "bio";
-    -ms-grid-column-align: center;
-        justify-self: center;
-  }
-  figure h2 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: name;
-  }
-  figure h3 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: title;
-  }
-  figure a {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: image;
-  }
-  figure a:hover {
-    color: #F29E28;
-    opacity: 0.5;
-  }
-  figure a img {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: image;
-    max-width: 40%;
-    -ms-grid-column-align: center;
-        justify-self: center;
-  }
-  figure figcaption {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    grid-area: bio;
-  }
-}
-
 /* SUBSCRIBE PAGE */
 #Logo {
   display: -ms-grid;
@@ -283,7 +204,6 @@ form p {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: label;
-  font-weight: 500;
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -300,5 +220,114 @@ form button {
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: button;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 42.7rem) {
+  /* HAMBURGER MENU */
+  ul {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+  ul li {
+    padding: 0.5rem;
+  }
+  .nav-wrapper [type=checkbox] {
+    display: none;
+  }
+  .nav-menu {
+    display: none;
+  }
+  #toggle:checked ~ * ~ .nav-menu {
+    display: block;
+  }
+  #hamburger {
+    z-index: 1;
+    padding-right: 0.7rem;
+    padding-top: 0.5rem;
+    cursor: pointer;
+  }
+  label {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+  }
+  /* SUBSCRIBE */
+  form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+        grid-template-areas: "label" "input" "button";
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  form p {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: label;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  form input {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: input;
+  }
+  form button {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: button;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  /* TEAM/MEMBER */
+  figure {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "image" "name" "title" "bio";
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  figure h2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: name;
+  }
+  figure h3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: title;
+  }
+  figure a {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: image;
+  }
+  figure a:hover {
+    color: #F29E28;
+    opacity: 0.5;
+  }
+  figure a img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: image;
+    max-width: 40%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  figure figcaption {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: bio;
+  }
 }
 /*# sourceMappingURL=main.css.map */

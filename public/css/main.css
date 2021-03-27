@@ -139,7 +139,7 @@ footer p {
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: image;
-  font-family: "Quattrocento", serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .member-figure a:hover {

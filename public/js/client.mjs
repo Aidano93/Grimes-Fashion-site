@@ -22,7 +22,7 @@ fetch('/api/v0/gallery')
       containerHTML += 
       `<figure class="card">
       <img src="${pic.imageSrc}" alt="${pic.title}"
-      width="${pic.width}" height="${pic.height}">
+      width="${pic.width}" height="${pic.height}" onclick="window.location='gallery/${pic.id}'">
       <figcaption>
         <h2>${pic.description}</h2>
       </figcaption>
@@ -33,3 +33,5 @@ fetch('/api/v0/gallery')
       container.innerHTML = containerHTML; 
   
   });
+
+  

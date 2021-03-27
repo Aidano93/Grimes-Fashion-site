@@ -45,10 +45,13 @@ An API was created and can be found in the routes directory. This API serves the
 The fetch() method is utilized in the client side javascript files to pull in our data from the database and put it on their respective pages. public/js/script.js serves the gallery, and public/js/member.js serves the team info.
 
 ## Fancy Feature
-TO DO:
-Details on what your Fancy Feature is an where to find it.
+The fancy feature is a hero section on the home page that incorporates the Greensock animation framework.
 
+Two SVG files were made (logo & logotext) and animated to scale up from zero to full opacity and "bounce" into place. A delay was placed on the text svg to offset the effects and make the overall animation more visually appealing. To acheive this animation required multiple effects to be stacked. The first effect called for the svg's to be hidden before beginning the animation, the second called for the actual scaling animation.
 
+A tagline was also incorporated into the feature. This object had to first be given an opacity and delay effect so it remained hidden while the logo and logo text finished their animation durations. Once they finished the tagline was then triggered to begin it's slide in animation with a bounce ending. 
+
+A button was also included with a link to Ton'y fabulous 2021 fashion collection.
 
 ## Attributions:
 - [Roman Shilin](https://unsplash.com/@romashilin)

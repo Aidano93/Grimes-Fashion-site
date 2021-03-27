@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
   <%- include('../partials/head') %>
-  <header>
-    <%= siteTitle %>
-  </header>
 </head>
 <body>
+  <%- include ('../partials/nav')%>
+  <%-include ('../partials/hero')%>
   <div id ="Logo">
-    <img class="logo" src="images/TonyGrimes.svg" alt="face of the company logo"> 
+    <img id="sub" class="logo" src="images/TonyGrimes.svg" alt="face of the company logo"> 
+    <h2><%= pageTitle %></h2>
   </div>
-
   <section>
     <div class="form">
-    <form action="https://formspree.io/f/{form_id}" method="post">
-      <label for="email">Join our mailing list</label>
-      <input name="Email" id="email" type="email">
-      <button type="submit">Submit</button>
-    </form>
+      <form action="https://formspree.io/f/{form_id}" method="post">
+        <!-- This was added because of colliding css files... due to the way hamburger menu is setup label is not displayed.. TALK TO GROUP! -->
+        <p>Join our mailing list</p>
+        <label class="label"for="email">Join our mailing list</label>
+        <input name="Email" id="email" type="email">
+        <button type="submit">Submit</button>
+      </form>
     </div>
-    </section>
-  
-  
+  </section>
+    <%- include ('../partials/footer')%>
 </body>
 </html>

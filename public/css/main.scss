@@ -8,17 +8,50 @@ $light-colour: #FFF;
 $dark-colour: #000;
 $accent-colour: #F29E28;
 
+/* PARTIALS */
 
 * {
   font-family: $normal-font;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.night-mode * {
-  background-color: $dark-colour;
-  color: $light-colour;
+/* HAMBURGER */
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+
+  padding: 0.5rem;
+
+  border-bottom: 2px solid $dark-colour;
+
+  margin: 0.5rem;
+
+  .grimes {
+    justify-self: start;
+  }
+
+  li {
+    justify-self: end;
+
+    a {
+      padding: 0.5rem;
+
+
+      text-decoration: none;
+
+      color: $dark-colour;
+
+      &:hover {
+        background-color: $accent-colour;
+      }
+    }
+  }
 }
 
 .nav-wrapper [type=checkbox] {
+  /*removes checkbox*/
   display: none;
 }
 
@@ -32,41 +65,6 @@ label {
   display: none;
 }
 
-nav {
-  ul {
-    display: grid;
-
-    grid-template-columns: repeat(5, auto);
-
-    padding: 0.5rem;
-
-    margin-left: 1rem;
-    margin-right: 1rem;
-
-    border-bottom: 2px solid $dark-colour;
-  }
-
-  .grimes {
-    justify-self: start;
-  }
-
-  li {
-    justify-self: end;
-  }
-
-  a {
-    padding: 0.5rem;
-
-    text-decoration: none;
-
-    color: $dark-colour;
-
-    &:hover {
-      background-color: $accent-colour;
-    }
-  }
-}
-
 .hero {
   display: grid;
 
@@ -76,7 +74,7 @@ nav {
 
   padding: 0.5rem;
 
-  min-height: 50vh;
+  min-height: 30vh;
 
   align-items: center;
 
@@ -95,50 +93,6 @@ nav {
   }
 }
 
-section {
-  display: grid;
-  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
-}
-
-figure {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas:
-    "image"
-    "name"
-    "title"
-    "bio";
-
-  h2 {
-    grid-area: name;
-  }
-
-  h3 {
-    grid-area: title;
-  }
-
-  a {
-    grid-area: image;
-
-    &:hover {
-      color: $accent-colour;
-      opacity: 0.5;
-    }
-
-    img {
-      grid-area: image;
-
-      width: 100%;
-    }
-  }
-
-  figcaption {
-    grid-area: bio;
-  }
-
-}
-
 footer {
   text-align: center;
 
@@ -155,7 +109,139 @@ footer {
   }
 }
 
+/* MEMBER PAGE */
+
+.member {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(736px, 1fr));
+}
+
+figure {
+  display: grid;
+  grid-template-columns: 500px 235.9px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "image name"
+    "image title"
+    "image bio";
+
+  border-bottom: 2px solid $dark-colour;
+  padding-bottom: 1rem;
+
+  justify-self: center;
+
+  h2 {
+    align-self: center;
+
+    grid-area: name;
+  }
+
+  h3 {
+    grid-area: title;
+  }
+
+  a {
+    display: grid;
+    grid-area: image;
+
+    // min-width: 40rem;
+
+    &:hover {
+      color: $accent-colour;
+      opacity: 0.5;
+    }
+
+    img {
+      grid-area: image;
+
+      width: 55%;
+      min-width: 365px;
+
+      justify-self: center;
+
+      padding-top: 1rem;
+    }
+  }
+
+  figcaption {
+    grid-area: bio;
+  }
+
+}
+
+
+/* SUBSCRIBE PAGE */
+
+#Logo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  #sub {
+    justify-self: end;
+
+    padding-right: 1rem;
+
+    margin: 0;
+
+    width: 55%;
+  }
+
+  h2 {
+    justify-self: start;
+    align-self: center;
+
+    padding-left: 1rem;
+  }
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "label button"
+    "input button";
+
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+
+  label {
+    display: none;
+  }
+
+  p {
+    grid-area: label;
+
+    justify-self: center;
+  }
+
+  input {
+    grid-area: input;
+    padding-left: 0.5rem;
+  }
+
+  button {
+    grid-area: button;
+  }
+}
+
+/* MEDIA QUERIES */
+
 @media screen and (max-width: 42.7rem) {
+
+  /* HAMBURGER MENU */
+  ul {
+    display: block;
+
+    text-align: center;
+
+    padding: 1rem;
+
+    li {
+
+      padding: 0.5rem;
+    }
+  }
 
   .nav-wrapper [type=checkbox] {
     display: none;
@@ -186,17 +272,83 @@ footer {
     right: 0;
   }
 
-  nav {
-    ul {
-      display: block;
+  /* SUBSCRIBE */
 
-      text-align: center;
+  form {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "label"
+      "input"
+      "button";
 
-      padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+
+    p {
+      grid-area: label;
+
+      justify-self: center;
     }
 
-    li {
-      padding: 0.5rem;
+    input {
+      grid-area: input;
+    }
+
+    button {
+      grid-area: button;
     }
   }
+
+  #sub {
+    min-width: 134.2px;
+  }
+
+  /* TEAM/MEMBER */
+  .member {
+    grid-template-columns: auto;
+
+    figure {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "image"
+        "name"
+        "title"
+        "bio";
+      justify-self: center;
+
+      h2 {
+        grid-area: name;
+      }
+
+      h3 {
+        grid-area: title;
+      }
+
+      a {
+        display: grid;
+        grid-area: image;
+
+        &:hover {
+          opacity: 0.5;
+        }
+
+        img {
+          grid-area: image;
+
+          min-width: 200px;
+
+          justify-self: center;
+        }
+      }
+
+      figcaption {
+        grid-area: bio;
+      }
+    }
+  }
+
 }

@@ -1,19 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@700&display=swap");
+/* PARTIALS */
 * {
   font-family: "Cabin", sans-serif;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.night-mode * {
-  background-color: #000;
-  color: #FFF;
+/* HAMBURGER */
+ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+  padding: 0.5rem;
+  border-bottom: 2px solid #000;
+  margin: 0.5rem;
+}
+
+ul .grimes {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+ul li {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+ul li a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #000;
+}
+
+ul li a:hover {
+  background-color: #F29E28;
 }
 
 .nav-wrapper [type=checkbox] {
+  /*removes checkbox*/
   display: none;
 }
 
 #hamburger {
-  position: relative;  
+  position: relative;
   z-index: -1;
 }
 
@@ -21,57 +52,25 @@ label {
   display: none;
 }
 
-nav ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (auto)[5];
-      grid-template-columns: repeat(5, auto);
-  padding: 0.5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  border-bottom: 2px solid #000;
-}
-
-nav .grimes {
-  -ms-grid-column-align: start;
-      justify-self: start;
-}
-
-nav li {
-  -ms-grid-column-align: end;
-      justify-self: end;
-}
-
-nav a {
-  padding: 0.5rem;
-  text-decoration: none;
-  color: #000;
-}
-
-nav a:hover {
-  background-color: #F29E28;
-}
-
 .hero {
   display: -ms-grid;
   display: grid;
   text-align: center;
-  margin: auto;
+  margin: 0.5rem;
   padding: 0.5rem;
-  min-height: 50vh;
+  min-height: 30vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 2px solid #000;
 }
 
-
 .hero h1 {
   margin: 0;
   padding: 0.5rem;
 }
 
-.hero p {
+.hero h2 {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
@@ -91,7 +90,149 @@ footer p {
   margin: 0;
 }
 
+/* MEMBER PAGE */
+.member {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(736px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(736px, 1fr));
+}
+
+figure {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 500px 235.9px;
+      grid-template-columns: 500px 235.9px;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "image name" "image title" "image bio";
+  border-bottom: 2px solid #000;
+  padding-bottom: 1rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+figure h2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: name;
+}
+
+figure h3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: title;
+}
+
+figure a {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: image;
+}
+
+figure a:hover {
+  color: #F29E28;
+  opacity: 0.5;
+}
+
+figure a img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: image;
+  width: 55%;
+  min-width: 365px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding-top: 1rem;
+}
+
+figure figcaption {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: bio;
+}
+
+/* SUBSCRIBE PAGE */
+#Logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#Logo #sub {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  padding-right: 1rem;
+  margin: 0;
+  width: 55%;
+}
+
+#Logo h2 {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 1rem;
+}
+
+form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "label button" "input button";
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+form label {
+  display: none;
+}
+
+form p {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: label;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+form input {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: input;
+  padding-left: 0.5rem;
+}
+
+form button {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: button;
+}
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 42.7rem) {
+  /* HAMBURGER MENU */
+  ul {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+  ul li {
+    padding: 0.5rem;
+  }
   .nav-wrapper [type=checkbox] {
     display: none;
   }
@@ -112,13 +253,84 @@ footer p {
     display: inline-block;
     right: 0;
   }
-  nav ul {
-    display: block;
-    text-align: center;
-    padding: 1rem;
+  /* SUBSCRIBE */
+  form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+        grid-template-areas: "label" "input" "button";
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
-  nav li {
-    padding: 0.5rem;
+  form p {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: label;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  form input {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: input;
+  }
+  form button {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: button;
+  }
+  #sub {
+    min-width: 134.2px;
+  }
+  /* TEAM/MEMBER */
+  .member {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .member figure {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "image" "name" "title" "bio";
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .member figure h2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: name;
+  }
+  .member figure h3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: title;
+  }
+  .member figure a {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: image;
+  }
+  .member figure a:hover {
+    opacity: 0.5;
+  }
+  .member figure a img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: image;
+    min-width: 200px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .member figure figcaption {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: bio;
   }
 }
 /*# sourceMappingURL=main.css.map */

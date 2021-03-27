@@ -264,11 +264,19 @@ figure {
 
   #sub {
     justify-self: end;
+
+    padding-right: 1rem;
+
+    margin: 0;
+
+    width: 55%;
   }
 
   h2 {
     justify-self: start;
     align-self: center;
+
+    padding-left: 1rem;
   }
 }
 
@@ -280,8 +288,11 @@ form {
     "label button"
     "input button";
 
-  .label {
+  padding-top: 2rem;
+
+  label {
     grid-area: label;
+    display: none;
   }
 
   input {

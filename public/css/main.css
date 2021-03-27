@@ -249,6 +249,9 @@ figure figcaption {
 #Logo #sub {
   -ms-grid-column-align: end;
       justify-self: end;
+  padding-right: 1rem;
+  margin: 0;
+  width: 55%;
 }
 
 #Logo h2 {
@@ -257,6 +260,7 @@ figure figcaption {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  padding-left: 1rem;
 }
 
 form {
@@ -267,12 +271,14 @@ form {
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
       grid-template-areas: "label button" "input button";
+  padding-top: 2rem;
 }
 
-form .label {
+form label {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: label;
+  display: none;
 }
 
 form input {

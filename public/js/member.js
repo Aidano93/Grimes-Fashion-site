@@ -13,6 +13,7 @@ fetch('api/v0/members')
   members.forEach((member) => {
   //Creating a set of figure elements for each object inside array list.
     const figure = document.createElement('figure');
+    figure.classList.add("member-figure");
     section.appendChild(figure);
   
   //Creating h2 element to nest into the figures, this is the name.

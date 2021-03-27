@@ -98,7 +98,7 @@ footer p {
       grid-template-columns: repeat(auto-fit, minmax(736px, 1fr));
 }
 
-figure {
+.member-figure {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 500px 235.9px;
@@ -112,7 +112,7 @@ figure {
       justify-self: center;
 }
 
-figure h2 {
+.member-figure h2 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -121,13 +121,13 @@ figure h2 {
   grid-area: name;
 }
 
-figure h3 {
+.member-figure h3 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: title;
 }
 
-figure a {
+.member-figure a {
   display: -ms-grid;
   display: grid;
   -ms-grid-row: 1;
@@ -136,12 +136,12 @@ figure a {
   grid-area: image;
 }
 
-figure a:hover {
+.member-figure a:hover {
   color: #F29E28;
   opacity: 0.5;
 }
 
-figure a img {
+.member-figure a img {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
@@ -153,7 +153,7 @@ figure a img {
   padding-top: 1rem;
 }
 
-figure figcaption {
+.member-figure figcaption {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: bio;
@@ -288,7 +288,7 @@ form button {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
   }
-  .member figure {
+  .member .member-figure {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto;
@@ -299,27 +299,27 @@ form button {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  .member figure h2 {
+  .member .member-figure h2 {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: name;
   }
-  .member figure h3 {
+  .member .member-figure h3 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: title;
   }
-  .member figure a {
+  .member .member-figure a {
     display: -ms-grid;
     display: grid;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: image;
   }
-  .member figure a:hover {
+  .member .member-figure a:hover {
     opacity: 0.5;
   }
-  .member figure a img {
+  .member .member-figure a img {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: image;
@@ -327,7 +327,7 @@ form button {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  .member figure figcaption {
+  .member .member-figure figcaption {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: bio;

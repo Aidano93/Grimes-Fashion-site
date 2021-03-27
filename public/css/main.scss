@@ -292,12 +292,16 @@ form {
   padding-bottom: 1rem;
 
   label {
-    grid-area: label;
     display: none;
+  }
+
+  p {
+    grid-area: label
   }
 
   input {
     grid-area: input;
+    padding-left: 0.5rem;
   }
 
   button {

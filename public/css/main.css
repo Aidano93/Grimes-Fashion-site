@@ -276,16 +276,20 @@ form {
 }
 
 form label {
+  display: none;
+}
+
+form p {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: label;
-  display: none;
 }
 
 form input {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: input;
+  padding-left: 0.5rem;
 }
 
 form button {

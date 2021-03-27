@@ -296,7 +296,9 @@ form {
   }
 
   p {
-    grid-area: label
+    grid-area: label to-upper-case($string: "Join our mailing list");
+
+    justify-self: center;
   }
 
   input {

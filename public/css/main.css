@@ -280,9 +280,9 @@ form label {
 }
 
 form p {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: label;
+  grid-area: label "JOIN OUR MAILING LIST";
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 form input {

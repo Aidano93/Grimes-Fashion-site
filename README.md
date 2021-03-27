@@ -69,6 +69,7 @@ The following HTML endpoints can be found on our site:
 - Single image (/gallery/:id) - Images on the gallery page can be clicked to navigate to the single image page for each.
 - Team (/team) - Displays a list of TEAM TONY, image and descriptions included.
 - Admin (/admin) - Displays a list of current subscribers.
+- Subscribe (/subscribe) - Displays a mailing list sign up form
 
 All pages are rendered via EJS in the views directory. Partials: 'head', 'header', 'footer', and 'nav' are included in each page.
 
@@ -90,7 +91,7 @@ An API was created and can be found in the routes directory. This API serves the
 - team JSON: /api/v0/members
 - subscribers JSON: /api/v0/subscribers
 
-The fetch() method is utilized in the client side javascript files to pull in our data from the database and put it on their respective pages. public/js/script.js serves the gallery, and public/js/member.js serves the team info.
+The fetch() method is utilized in the client side javascript files to pull in our data from the database and put it on their respective pages. client.js serves the gallery, member.js serves the team info, and subscriber.js serves the sub list.
 
 ## Fancy Feature
 The fancy feature is a hero section on the home page that incorporates the Greensock animation framework.

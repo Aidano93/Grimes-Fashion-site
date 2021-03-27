@@ -19,11 +19,11 @@ A multi-page, database-driven product website using Express, EJS & Mongoose depl
 
 ### Makayla
 - Find example websites for inspiration
-- Team HTML page
+- Build "Team" ejs template
+- Build "Admin" ejs template
 - Build out partials
-- Member.js
-- Admin HTML page
-- CSS
+- Created forEach() and used fetch() for "team" page
+- SCSS/CSS
 
 ### Joel
 - Find example websites for inspiration

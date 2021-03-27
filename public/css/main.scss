@@ -203,8 +203,9 @@ form {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-      "label button"
-      "input button";
+      "label label"
+      "name button"
+      "email button";
 
     label {
       display: none;
@@ -216,8 +217,12 @@ form {
       justify-self: center;
     }
 
-    input {
-      grid-area: input;
+    #name {
+      grid-area: name;
+    }
+
+    #email {
+      grid-area: email;
       padding-left: 0.5rem;
     }
 
@@ -277,29 +282,41 @@ form {
   /* SUBSCRIBE */
 
   form {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-areas:
-      "label"
-      "input"
-      "button";
-
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     padding-bottom: 1rem;
 
+    fieldset {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "label"
+        "name"
+        "email"
+        "button";
 
-    p {
-      grid-area: label;
+      label {
+        display: none;
+      }
 
-      justify-self: center;
-    }
+      p {
+        grid-area: label;
 
-    input {
-      grid-area: input;
-    }
+        justify-self: center;
+      }
 
-    button {
-      grid-area: button;
+      #name {
+        grid-area: name;
+      }
+
+      #email {
+        grid-area: input;
+        padding-left: 0.5rem;
+      }
+
+      button {
+        grid-area: button;
+      }
     }
   }
 

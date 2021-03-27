@@ -16,6 +16,50 @@ $accent-colour: #F29E28;
   box-sizing: border-box;
 }
 
+/* HAMBURGER */
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+
+  padding: 0.5rem;
+
+  .grimes {
+    justify-self: start;
+  }
+
+  li {
+    justify-self: end;
+
+    a {
+      padding: 0.5rem;
+
+
+      text-decoration: none;
+
+      color: $dark-colour;
+
+      &:hover {
+        background-color: $accent-colour;
+      }
+    }
+  }
+}
+
+.nav-wrapper [type=checkbox] {
+  /*removes checkbox*/
+  display: none;
+}
+
+#hamburger {
+  position: relative;
+
+  z-index: -1;
+}
+
+label {
+  display: none;
+}
 
 .hero {
   display: grid;
@@ -118,9 +162,49 @@ figure {
 
 }
 
-// @media screen and (max-width: 42.7rem) {
+@media screen and (max-width: 42.7rem) {
+  ul {
+    display: block;
 
-// }
+    text-align: center;
+
+    padding: 1rem;
+
+    li {
+
+      padding: 0.5rem;
+    }
+  }
+
+  .nav-wrapper [type=checkbox] {
+    display: none;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  #toggle:checked~*~.nav-menu {
+    display: block;
+  }
+
+  #hamburger {
+    z-index: 1;
+
+    padding-right: 0.7rem;
+    padding-top: 0.5rem;
+
+    cursor: pointer;
+  }
+
+  label {
+    position: absolute;
+
+    display: inline-block;
+
+    right: 0;
+  }
+}
 
 @media screen and (max-width: 736px) {
   figure {
@@ -200,62 +284,4 @@ form {
   button {
     grid-area: button;
   }
-}
-
-/* HAMBURGER */
-
-.ham {
-  position: fixed;
-
-  z-index: 100;
-
-  top: 1rem;
-  right: 1rem;
-
-  width: 3rem;
-  height: 3rem;
-
-  border: 1px solid $dark-colour;
-  background: $light-colour;
-
-  cursor: pointer;
-}
-
-.xIcon {
-  display: none;
-}
-
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100vh;
-  background: black;
-  color: white;
-  transform: translateY(-100%);
-  transition: transform 0.2s;
-  list-style: none;
-  padding-top: 4rem;
-
-  li {
-    padding: 1rem 0;
-  }
-
-  .menuLink {
-    display: inline;
-    font-size: 2rem;
-    color: white;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
-.showMenu {
-  transform: translateY(0);
 }

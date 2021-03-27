@@ -299,6 +299,10 @@ form {
       grid-area: button;
     }
   }
+
+  #sub {
+    min-width: 134.2px;
+  }
 }
 
 @media screen and (max-width: 736px) {

@@ -280,6 +280,9 @@ form button {
     -ms-grid-column: 1;
     grid-area: button;
   }
+  #sub {
+    min-width: 134.2px;
+  }
 }
 
 @media screen and (max-width: 736px) {

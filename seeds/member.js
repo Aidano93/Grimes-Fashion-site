@@ -15,7 +15,7 @@ module.exports = [
   },
   {
     name: 'Joel',
-    profilePic: 'images/IMG_0024.jpg',
+    profilePic: 'images/IMG_0024.JPG',
     title: 'Tony\'s Fantastic Four',
     bio: 'Starting out my coding journey!',
     github: 'https://github.com/kayej22'

@@ -97,11 +97,12 @@ nav {
 
 section {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(736px, 1fr));
 }
 
 figure {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 500px 235.9px;
   grid-template-rows: auto;
   grid-template-areas:
     "image name"
@@ -112,6 +113,8 @@ figure {
   padding-bottom: 1rem;
 
   h2 {
+    align-self: center;
+
     grid-area: name;
   }
 
@@ -123,8 +126,7 @@ figure {
     display: grid;
     grid-area: image;
 
-    max-width: 40rem;
-    min-width: 30rem;
+    min-width: 40rem;
 
     &:hover {
       color: $accent-colour;
@@ -206,7 +208,9 @@ footer {
       padding: 0.5rem;
     }
   }
+}
 
+@media screen and (max-width: 736px) {
   figure {
     display: grid;
     grid-template-columns: auto;
@@ -246,6 +250,5 @@ footer {
     figcaption {
       grid-area: bio;
     }
-
   }
 }

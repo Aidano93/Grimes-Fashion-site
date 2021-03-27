@@ -283,6 +283,11 @@ form {
       justify-self: center;
 }
 
+.subscribers .admin .sub-email {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 42.7rem) {
   /* HAMBURGER MENU */

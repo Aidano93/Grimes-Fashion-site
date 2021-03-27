@@ -14,6 +14,11 @@ router.get('/', (req, res) => {
   res.render('pages/index', {pageTitle: 'Home'})
 })
 
+// Gallery
+router.get('/gallery', (req, res) => {
+  res.render('pages/gallery', {pageTitle: 'Gallery'})
+})
+
 // Subscribe
 router.get('/subscribe', (req, res) => {
   res.render('pages/subscribe', {pageTitle: 'Subscribe'})

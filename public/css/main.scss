@@ -255,39 +255,3 @@ figure {
     }
   }
 }
-
-/* SUBSCRIBE PAGE */
-
-#Logo {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  #sub {
-    justify-self: end;
-  }
-
-  h2 {
-    justify-self: start;
-  }
-}
-
-form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas:
-    "label button"
-    "input button";
-
-  .label {
-    grid-area: label;
-  }
-
-  input {
-    grid-area: input;
-  }
-
-  button {
-    grid-area: button;
-  }
-}

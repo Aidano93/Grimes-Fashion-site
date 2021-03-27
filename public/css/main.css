@@ -233,51 +233,4 @@ figure figcaption {
     grid-area: bio;
   }
 }
-
-/* SUBSCRIBE PAGE */
-#Logo {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
-#Logo #sub {
-  -ms-grid-column-align: end;
-      justify-self: end;
-}
-
-#Logo h2 {
-  -ms-grid-column-align: start;
-      justify-self: start;
-}
-
-form {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-areas: "label button" "input button";
-}
-
-form .label {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: label;
-}
-
-form input {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: input;
-}
-
-form button {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  grid-area: button;
-}
 /*# sourceMappingURL=main.css.map */

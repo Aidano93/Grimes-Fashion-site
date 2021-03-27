@@ -252,7 +252,7 @@ figure figcaption {
       justify-self: start;
 }
 
-.form {
+form {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -262,19 +262,19 @@ figure figcaption {
       grid-template-areas: "label button" "input button";
 }
 
-.form label {
+form label {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: label;
 }
 
-.form input {
+form input {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: input;
 }
 
-.form button {
+form button {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;

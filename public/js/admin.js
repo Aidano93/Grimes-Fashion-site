@@ -12,9 +12,9 @@ fetch('api/v0/subscribers')
 
   subscribers.forEach(function(subscriber) {
     output += `
-      <div>
-        <p>${subscriber.name}</p>
-        <p>${subscriber.email}</p>
+      <div class="admin">
+        <p class="sub-name">${subscriber.name}</p>
+        <p class="sub-email">${subscriber.email}</p>
       </div>
     `;
   });

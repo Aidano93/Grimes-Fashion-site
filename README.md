@@ -43,7 +43,7 @@ A multi-page, database-driven product website using Express, EJS & Mongoose depl
 - Mongoose connection
 - Build Database
 - Build server
-- error handling
+- Error handling
 - PUT image
 - Image gallery import into HTML
 - README draft

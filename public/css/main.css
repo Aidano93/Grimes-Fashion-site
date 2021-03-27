@@ -219,6 +219,10 @@ form {
   margin: 0.5rem;
 }
 
+#gallery .card .card-img:hover {
+  cursor: pointer;
+}
+
 #gallery .card figcaption {
   text-align: center;
 }

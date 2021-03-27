@@ -460,10 +460,12 @@ footer {
 
       h2 {
         grid-area: name;
+        text-align: center;
       }
 
       h3 {
         grid-area: title;
+        text-align: center;
       }
 
       a {
@@ -485,6 +487,7 @@ footer {
 
       figcaption {
         grid-area: bio;
+        text-align: center;
       }
     }
   }

@@ -420,11 +420,13 @@ footer p {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: name;
+    text-align: center;
   }
   .member .member-figure h3 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: title;
+    text-align: center;
   }
   .member .member-figure a {
     display: -ms-grid;
@@ -448,6 +450,7 @@ footer p {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: bio;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

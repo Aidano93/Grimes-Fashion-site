@@ -107,6 +107,8 @@ figure {
       max-width: 50%;
 
       justify-self: center;
+
+      padding-top: 1rem;
     }
   }
 
@@ -151,7 +153,7 @@ figure {
       img {
         grid-area: image;
 
-        max-width: 50%;
+        max-width: 40%;
 
         justify-self: center;
       }

@@ -103,6 +103,7 @@ figure a img {
   max-width: 50%;
   -ms-grid-column-align: center;
       justify-self: center;
+  padding-top: 1rem;
 }
 
 figure figcaption {
@@ -146,7 +147,7 @@ figure figcaption {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: image;
-    max-width: 50%;
+    max-width: 40%;
     -ms-grid-column-align: center;
         justify-self: center;
   }

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento&display=swap');
 
-$bold-font: 'Roboto Condensed',
+$bold-font: 'Oswald',
 sans-serif;
-$normal-font: 'Cabin',
-sans-serif;
+$normal-font: 'Quattrocento',
+serif;
 $light-colour: #FFF;
 $dark-colour: #000;
 $accent-colour: #F29E28;
@@ -12,7 +12,6 @@ $rem : 0.5rem;
 /* PARTIALS */
 
 * {
-  font-family: $normal-font;
   margin: 0;
   box-sizing: border-box;
 }
@@ -39,6 +38,7 @@ ul {
     a {
       padding: $rem;
 
+      font-family: $normal-font;
 
       text-decoration: none;
 
@@ -85,10 +85,14 @@ label {
     margin: 0;
 
     padding: $rem;
+
+    font-family: $bold-font;
   }
 
   h2 {
     align-self: start;
+
+    font-family: $normal-font;
 
     margin: 0;
   }
@@ -107,6 +111,8 @@ footer {
 
   p {
     margin: 0;
+
+    font-family: $normal-font;
   }
 }
 
@@ -135,17 +141,21 @@ footer {
     align-self: center;
 
     grid-area: name;
+
+    font-family: $bold-font;
   }
 
   h3 {
     grid-area: title;
+
+    font-family: $normal-font;
   }
 
   a {
     display: grid;
     grid-area: image;
 
-    // min-width: 40rem;
+    font-family: $normal-font;
 
     &:hover {
       color: $accent-colour;
@@ -166,6 +176,8 @@ footer {
 
   figcaption {
     grid-area: bio;
+
+    font-family: $normal-font;
   }
 
 }
@@ -192,6 +204,8 @@ footer {
     align-self: center;
 
     padding-left: 1rem;
+
+    font-family: $bold-font;
   }
 }
 
@@ -235,6 +249,8 @@ form {
 
     figcaption {
       text-align: center;
+
+      font-family: $normal-font;
     }
   }
 }
@@ -268,6 +284,8 @@ form {
 
     figcaption {
       text-align: center;
+
+      font-family: $normal-font;
     }
   }
 }
@@ -291,10 +309,14 @@ form {
 
     .sub-name {
       justify-self: center;
+
+      font-family: $bold-font;
     }
 
     .sub-email {
       justify-self: center;
+
+      font-family: $normal-font;
     }
   }
 }
@@ -306,10 +328,12 @@ form {
 
   h1 {
     text-align: center;
+    font-family: $bold-font;
   }
 
   h2 {
     text-align: center;
+    font-family: $normal-font;
   }
 
   img {
@@ -318,6 +342,8 @@ form {
 
   p {
     text-align: center;
+    font-family: $normal-font;
+    font-size: 28px;
   }
 }
 

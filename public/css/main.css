@@ -147,6 +147,7 @@ figure a img {
   -ms-grid-column: 1;
   grid-area: image;
   width: 55%;
+  min-width: 365px;
   -ms-grid-column-align: center;
       justify-self: center;
   padding-top: 1rem;
@@ -316,14 +317,13 @@ form button {
     grid-area: image;
   }
   .member figure a:hover {
-    background-color: #F29E28;
     opacity: 0.5;
   }
   .member figure a img {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: image;
-    min-width: 134.2px;
+    min-width: 200px;
     -ms-grid-column-align: center;
         justify-self: center;
   }

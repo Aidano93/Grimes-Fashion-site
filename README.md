@@ -12,6 +12,51 @@
 
 A multi-page, database-driven product website using Express, EJS & Mongoose deployed to Heroku and MongoDB Atlas.
 
+
+## Group Charter
+
+### Aidan
+-Find example websites for inspiration
+-Build out JSON endpoints
+-POST subsrcibers
+-Build Database
+-Build Server
+-Error handling
+-Connect sub page form to back-end
+-Single image page render for each image.
+
+### Dustin
+-Find example websites for inspiration
+-Schema/Model implementation
+-DB import
+-Mongoose connection
+-Build Database
+-Build server
+-error handling
+-PUT image
+-Image gallery import into HTML
+-README draft
+
+### Makayla
+-Find example websites for inspiration
+-Team HTML page
+-Build out partials
+-Member.js
+-Admin HTML page
+-CSS
+
+### Joel
+-Find example websites for inspiration
+-Gather 12 images for gallery
+-Gallery and Subscribe page mock-up html
+-SVG creation
+-Splash page on index
+-Greensock animation
+-CSS for fancy feature
+-Error(s) page
+-Team Charter README
+
+
 ## Description
 
 ### Rendered HTML Endpoints

@@ -2,55 +2,65 @@
 /* PARTIALS */
 * {
   font-family: "Cabin", sans-serif;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.night-mode * {
-  background-color: #000;
-  color: #FFF;
+.ham {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #000;
+  background: #FFF;
+  cursor: pointer;
 }
 
-.nav-wrapper [type=checkbox] {
+.xIcon {
   display: none;
 }
 
-#hamburger {
-  position: relative;
-  z-index: -1;
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  color: white;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  list-style: none;
+  padding-top: 4rem;
 }
 
-label {
-  display: none;
+.menu li {
+  padding: 1rem 0;
 }
 
-nav ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (auto)[5];
-      grid-template-columns: repeat(5, auto);
-  padding: 0.5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  border-bottom: 2px solid #000;
-}
-
-nav .grimes {
-  -ms-grid-column-align: start;
-      justify-self: start;
-}
-
-nav li {
-  -ms-grid-column-align: end;
-      justify-self: end;
-}
-
-nav a {
-  padding: 0.5rem;
+.menu .menuLink {
+  display: inline;
+  font-size: 2rem;
+  color: white;
   text-decoration: none;
-  color: #000;
 }
 
-nav a:hover {
-  background-color: #F29E28;
+.menu .menuLink:hover {
+  text-decoration: underline;
+}
+
+.showMenu {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .hero {
@@ -232,5 +242,55 @@ figure figcaption {
     -ms-grid-column: 1;
     grid-area: bio;
   }
+}
+
+/* SUBSCRIBE PAGE */
+#Logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#Logo #sub {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+#Logo h2 {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "label button" "input button";
+}
+
+form .label {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: label;
+}
+
+form input {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: input;
+}
+
+form button {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: button;
 }
 /*# sourceMappingURL=main.css.map */

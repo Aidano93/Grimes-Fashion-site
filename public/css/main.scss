@@ -232,6 +232,36 @@ form {
   }
 }
 
+/* GALLERY */
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  .card {
+    display: grid;
+    justify-self: center;
+
+    max-width: 400px;
+    height: auto;
+
+    border: 2px solid $dark-colour;
+
+
+    .card-img {
+      width: 80%;
+      height: auto;
+
+      justify-self: center;
+    }
+
+    figcaption {
+      text-align: center;
+    }
+  }
+}
+
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 42.7rem) {

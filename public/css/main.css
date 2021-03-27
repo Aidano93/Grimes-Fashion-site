@@ -231,6 +231,35 @@ form fieldset button {
   grid-area: button;
 }
 
+/* GALLERY */
+#gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#gallery .card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  max-width: 400px;
+  height: auto;
+  border: 2px solid #000;
+}
+
+#gallery .card .card-img {
+  width: 80%;
+  height: auto;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#gallery .card figcaption {
+  text-align: center;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 42.7rem) {
   /* HAMBURGER MENU */

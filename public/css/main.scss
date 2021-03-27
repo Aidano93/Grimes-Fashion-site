@@ -239,10 +239,24 @@ form {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
   .card {
-    width: 300px;
+    display: grid;
+    justify-self: center;
 
-    .card-image {
-      width: 55%;
+    max-width: 400px;
+    height: auto;
+
+    border: 2px solid $dark-colour;
+
+
+    .card-img {
+      width: 80%;
+      height: auto;
+
+      justify-self: center;
+    }
+
+    figcaption {
+      text-align: center;
     }
   }
 }

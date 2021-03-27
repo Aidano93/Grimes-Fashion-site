@@ -240,11 +240,24 @@ form fieldset button {
 }
 
 #gallery .card {
-  width: 300px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  max-width: 400px;
+  height: auto;
+  border: 2px solid #000;
 }
 
-#gallery .card .card-image {
-  width: 55%;
+#gallery .card .card-img {
+  width: 80%;
+  height: auto;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#gallery .card figcaption {
+  text-align: center;
 }
 
 /* MEDIA QUERIES */

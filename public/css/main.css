@@ -193,21 +193,32 @@ footer p {
   font-family: "Oswald", sans-serif;
 }
 
-form {
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
-}
-
-form fieldset {
+.subbing {
   display: -ms-grid;
   display: grid;
 }
 
-form fieldset legend {
+.subbing .form {
+  max-width: 700px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.subbing .form form {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.subbing .form form fieldset {
+  display: -ms-grid;
+  display: grid;
+}
+
+.subbing .form form fieldset legend {
   font-family: "Nunito", sans-serif;
 }
 
-form fieldset input {
+.subbing .form form fieldset input {
   display: block;
   max-width: 600px;
   -ms-grid-column-align: center;

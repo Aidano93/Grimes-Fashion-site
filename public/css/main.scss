@@ -210,30 +210,41 @@ footer {
   }
 }
 
-form {
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
+.subbing {
+  display: grid;
 
-  fieldset {
-    display: grid;
+  .form {
+    max-width: 700px;
+    justify-self: center;
 
-    legend {
-      font-family: $normal-font;
-    }
+    form {
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
 
-    input {
-      display: block;
+      fieldset {
+        display: grid;
 
-      max-width: 600px;
+        legend {
+          font-family: $normal-font;
+        }
 
-      justify-self: center;
+        input {
+          display: block;
 
-      padding-bottom: $rem;
+          max-width: 600px;
 
-      margin-bottom: $rem;
+          justify-self: center;
+
+          padding-bottom: $rem;
+
+          margin-bottom: $rem;
+        }
+      }
     }
   }
+
 }
+
 
 
 

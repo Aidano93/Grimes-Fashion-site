@@ -235,8 +235,8 @@ form fieldset button {
 #gallery {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 #gallery .card {
@@ -244,9 +244,10 @@ form fieldset button {
   display: grid;
   -ms-grid-column-align: center;
       justify-self: center;
-  max-width: 400px;
+  max-width: 513.6px;
   height: auto;
   border: 2px solid #000;
+  margin: 0.5rem;
 }
 
 #gallery .card .card-img {
@@ -254,6 +255,10 @@ form fieldset button {
   height: auto;
   -ms-grid-column-align: center;
       justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0.5rem;
 }
 
 #gallery .card figcaption {

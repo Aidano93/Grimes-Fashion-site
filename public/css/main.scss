@@ -236,16 +236,18 @@ form {
 
 #gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
   .card {
     display: grid;
     justify-self: center;
 
-    max-width: 400px;
+    max-width: 513.6px;
     height: auto;
 
     border: 2px solid $dark-colour;
+
+    margin: 0.5rem;
 
 
     .card-img {
@@ -253,6 +255,9 @@ form {
       height: auto;
 
       justify-self: center;
+      align-self: center;
+
+      margin: 0.5rem;
     }
 
     figcaption {

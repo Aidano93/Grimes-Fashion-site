@@ -1,7 +1,7 @@
 /* splash page */
 .pageheader {
   /* change default behaviour of `margin: auto` below */
-  background-image: url("../images/hao-wang-pVq6YhmDPtk-unsplash-blur.jpg");
+  background-image: url("../images/fadel-atthoriq-t6bXq5HPhXg-unsplash.jpg");
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
@@ -37,6 +37,7 @@ margin-right: auto;
 
 
 
+
 }
 
 .tagline {
@@ -46,6 +47,7 @@ margin-right: auto;
   margin-left: auto;
   margin-right: auto;
   color: white;
+  
 }
 
 .logo {

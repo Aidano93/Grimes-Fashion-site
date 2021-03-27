@@ -280,7 +280,10 @@ form label {
 }
 
 form p {
-  grid-area: label "JOIN OUR MAILING LIST";
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: label;
+  font-weight: 500;
   -ms-grid-column-align: center;
       justify-self: center;
 }

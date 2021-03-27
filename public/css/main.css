@@ -80,8 +80,6 @@ nav a:hover {
 section {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[autofit];
-      grid-template-columns: repeat(autofit, minmax(300px, 1fr));
 }
 
 figure {
@@ -89,27 +87,32 @@ figure {
   display: grid;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
-      grid-template-areas: "image" "name" "title" "bio";
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "image name" "image title" "image bio";
 }
 
 figure h2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: name;
 }
 
 figure h3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: title;
 }
 
 figure a {
+  display: -ms-grid;
+  display: grid;
   -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: image;
+  max-width: 40rem;
+  min-width: 30rem;
 }
 
 figure a:hover {
@@ -119,14 +122,17 @@ figure a:hover {
 
 figure a img {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: image;
-  width: 100%;
+  max-width: 50%;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 figure figcaption {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: bio;
 }
 

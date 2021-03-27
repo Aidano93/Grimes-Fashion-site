@@ -97,18 +97,16 @@ nav {
 
 section {
   display: grid;
-  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
 }
 
 figure {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: auto;
   grid-template-areas:
-    "image"
-    "name"
-    "title"
-    "bio";
+    "image name"
+    "image title"
+    "image bio";
 
   h2 {
     grid-area: name;
@@ -119,7 +117,11 @@ figure {
   }
 
   a {
+    display: grid;
     grid-area: image;
+
+    max-width: 40rem;
+    min-width: 30rem;
 
     &:hover {
       color: $accent-colour;
@@ -129,7 +131,9 @@ figure {
     img {
       grid-area: image;
 
-      width: 100%;
+      max-width: 50%;
+
+      justify-self: center;
     }
   }
 

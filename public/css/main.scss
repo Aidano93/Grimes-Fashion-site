@@ -195,33 +195,35 @@ footer {
 }
 
 form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas:
-    "label button"
-    "input button";
-
   padding-top: 1.5rem;
   padding-bottom: 1rem;
 
-  label {
-    display: none;
-  }
+  fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "label button"
+      "input button";
 
-  p {
-    grid-area: label;
+    label {
+      display: none;
+    }
 
-    justify-self: center;
-  }
+    p {
+      grid-area: label;
 
-  input {
-    grid-area: input;
-    padding-left: 0.5rem;
-  }
+      justify-self: center;
+    }
 
-  button {
-    grid-area: button;
+    input {
+      grid-area: input;
+      padding-left: 0.5rem;
+    }
+
+    button {
+      grid-area: button;
+    }
   }
 }
 
@@ -350,5 +352,4 @@ form {
       }
     }
   }
-
 }

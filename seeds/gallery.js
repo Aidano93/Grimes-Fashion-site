@@ -8,7 +8,7 @@ module.exports = [
     pathURL: 'https://unsplash.com/photos/CTz3o-IqeoI',
     credit: 'Roman Shilin',
     creditURL: 'https://unsplash.com/@romashilin',
-    imageSrc: '/images/unsplash/albert-vincent-wu-SnAy-Tdn4tM-unsplash.jpg',
+    imageSrc: '/images/unsplash/roman-shilin-CTz3o-IqeoI-unsplash.jpg',
   },
 
   {
@@ -20,7 +20,7 @@ module.exports = [
     pathURL: 'https://unsplash.com/photos/W-7k72ThEr0',
     credit: 'Laura Chouette',
     creditURL: 'https://unsplash.com/@laurachouette',
-    imageSrc: '/images/unsplash/duane-mendes-UIyzjfekpQ4-unsplash.jpg',
+    imageSrc: '/images/unsplash/laura-chouette-W-7k72ThEr0-unsplash.jpg',
   },
 
   {
@@ -56,7 +56,7 @@ module.exports = [
     pathURL: 'https://unsplash.com/photos/g4K9KyHGDEc',
     credit: 'Omid Armin',
     creditURL: 'https://unsplash.com/@omidarmin',
-    imageSrc: '/images/unsplash/jon-tyson-X4BHXXbaFj4-unsplash.jpg',
+    imageSrc: '/images/unsplash/omid-armin-g4K9KyHGDEc-unsplash.jpg',
   },
 
   {
@@ -68,7 +68,7 @@ module.exports = [
     pathURL: 'https://unsplash.com/photos/3OG8ywzgjJY',
     credit: 'Tyler Nix',
     creditURL: 'https://unsplash.com/@jtylernix',
-    imageSrc: '/images/unsplash/joshua-rondeau-ohWlGF9wokg-unsplash(1).jpg',
+    imageSrc: '/images/unsplash/tyler-nix-3OG8ywzgjJY-unsplash.jpg',
   },
 
   {
@@ -80,7 +80,7 @@ module.exports = [
     pathURL: 'https://unsplash.com/photos/UIyzjfekpQ4',
     credit: 'Duane Mendes',
     creditURL: 'https://unsplash.com/@duanemendes',
-    imageSrc: '/images/unsplash/laura-chouette-W-7k72ThEr0-unsplash.jpg',
+    imageSrc: '/images/unsplash/duane-mendes-UIyzjfekpQ4-unsplash.jpg',
   },
 
   {
@@ -92,7 +92,7 @@ module.exports = [
     pathURL: 'https://unsplash.com/photos/ohWlGF9wokg',
     credit: 'Joshua Rondeau',
     creditURL: 'https://unsplash.com/@liferondeau',
-    imageSrc: '/images/unsplash/omid-armin-g4K9KyHGDEc-unsplash.jpg',
+    imageSrc: '/images/unsplash/joshua-rondeau-ohWlGF9wokg-unsplash(1).jpg',
   },
 
   {
@@ -104,7 +104,7 @@ module.exports = [
     pathURL: 'https://unsplash.com/photos/SnAy-Tdn4tM',
     credit: 'Albert Vincent Wu',
     creditURL: 'https://unsplash.com/@albertvincentwu',
-    imageSrc: '/images/unsplash/roman-shilin-CTz3o-IqeoI-unsplash.jpg',
+    imageSrc: '/images/unsplash/albert-vincent-wu-SnAy-Tdn4tM-unsplash.jpg',
   },
 
   {
@@ -128,7 +128,7 @@ module.exports = [
     pathURL: 'https://unsplash.com/photos/X4BHXXbaFj4',
     credit: 'Jon Tyson',
     creditURL: 'https://unsplash.com/@jontyson',
-    imageSrc: '/images/unsplash/sour-moha-tSP10XOSIAQ-unsplash.jpg',
+    imageSrc: '/images/unsplash/jon-tyson-X4BHXXbaFj4-unsplash.jpg',
   },
 
   {
@@ -140,6 +140,6 @@ module.exports = [
     pathURL: 'https://unsplash.com/photos/tSP10XOSIAQ',
     credit: 'sour moha',
     creditURL: 'https://unsplash.com/@sour_moha',
-    imageSrc: '/images/unsplash/tyler-nix-3OG8ywzgjJY-unsplash.jpg',
+    imageSrc: '/images/unsplash/sour-moha-tSP10XOSIAQ-unsplash.jpg',
   }
 ];

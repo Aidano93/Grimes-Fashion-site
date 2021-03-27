@@ -223,6 +223,33 @@ form {
   text-align: center;
 }
 
+/* SINGLE IMAGE */
+main .single-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  max-width: 513.6px;
+  height: auto;
+  border: 2px solid #000;
+  margin: 0.5rem;
+}
+
+main .single-card .card-img {
+  width: 80%;
+  height: auto;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0.5rem;
+}
+
+main .single-card figcaption {
+  text-align: center;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 42.7rem) {
   /* HAMBURGER MENU */

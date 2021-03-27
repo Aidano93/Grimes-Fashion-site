@@ -233,6 +233,38 @@ form {
   }
 }
 
+/* SINGLE IMAGE */
+
+main {
+  .single-card {
+    display: grid;
+    justify-self: center;
+
+    max-width: 513.6px;
+    height: auto;
+
+    border: 2px solid $dark-colour;
+
+    margin: 0.5rem;
+
+
+    .card-img {
+      width: 80%;
+      height: auto;
+
+      justify-self: center;
+      align-self: center;
+
+      margin: 0.5rem;
+    }
+
+    figcaption {
+      text-align: center;
+    }
+  }
+}
+
+
 
 /* MEDIA QUERIES */
 

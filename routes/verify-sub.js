@@ -15,7 +15,7 @@ router.post('/', (req, res) => {
     if (err){
       res.send('<p>Problem subscribing. <a href="/subscribe">Please try again</a>.</p>')
     }
-    res.send('<p>Success! Thanks for subscribing. <a href="/">Back to home</a>.</p>')
+    res.send(`<p>Success! Thanks for subscribing ${subscriber.name}. ${subscriber.email} is registered. <a href="/">Back to home</a>.</p>`)
   })
 });
 

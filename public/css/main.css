@@ -224,7 +224,7 @@ form {
 }
 
 /* SINGLE IMAGE */
-main .single-card {
+.main .single-card {
   display: -ms-grid;
   display: grid;
   -ms-grid-column-align: center;
@@ -235,7 +235,7 @@ main .single-card {
   margin: 0.5rem;
 }
 
-main .single-card .card-img {
+.main .single-card .card-img {
   width: 80%;
   height: auto;
   -ms-grid-column-align: center;
@@ -246,7 +246,7 @@ main .single-card .card-img {
   margin: 0.5rem;
 }
 
-main .single-card figcaption {
+.main .single-card figcaption {
   text-align: center;
 }
 

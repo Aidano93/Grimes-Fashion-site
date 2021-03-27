@@ -225,6 +225,10 @@ form {
       align-self: center;
 
       margin: 0.5rem;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     figcaption {

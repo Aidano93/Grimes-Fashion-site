@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include ('../partials/head')%>
+</head>
+<body>
+  <%- include ('../partials/nav')%>
+  <%-include ('../partials/hero')%>
+  <main>
+    <figure class="card">
+      <img src=" <%= image.imageSrc %>  " alt=" <%= image.title %>  "
+      width="<%= image.width %>" height="<%= image.height%>">
+      <figcaption>
+        <h2><%= image.description%></h2>
+      </figcaption>
+    </figure>
+  </main>
+  <%- include ('../partials/footer')%>
+</body>
+</html>

@@ -1,5 +1,8 @@
 # CPNT262-FINAL: Group Project - Deployed Product/Services Website
 
+- [GH Repo](https://github.com/cowtowndusty/cpnt262-FINAL)
+- [Deployed Heroku URL](https://sait-cpnt262-FINAL.herokuapp.com/)
+
 ## Team Members
 - [Makayla Martineau Raymundo](https://github.com/MakaylaMR)
 - [Joel Kaye](https://github.com/kayej22)
@@ -7,36 +10,12 @@
 - [Aidan O'Reilly](https://github.com/Aidano93)
 
 
-- [GH Repo](https://github.com/cowtowndusty/cpnt262-FINAL)
-- [Deployed Heroku URL](https://sait-cpnt262-FINAL.herokuapp.com/)
+
 
 A multi-page, database-driven product website using Express, EJS & Mongoose deployed to Heroku and MongoDB Atlas.
 
 
 ## Group Charter
-
-### Aidan
-- Find example websites for inspiration
-- Build out JSON endpoints
-- POST subscribers / sub form set up
-- Build Database
-- Build Server
-- Error handling
-- Connect sub page form to back-end
-- Single image page render for each image.
-- admin.js (fetch method and foreach loop to display sub list)
-
-### Dustin
-- Find example websites for inspiration
-- Schema/Model implementation
-- DB import
-- Mongoose connection
-- Build Database
-- Build server
-- error handling
-- PUT image
-- Image gallery import into HTML
-- README draft
 
 ### Makayla
 - Find example websites for inspiration
@@ -57,16 +36,39 @@ A multi-page, database-driven product website using Express, EJS & Mongoose depl
 - Index, Gallery, Error(s) page
 - Team Charter README
 
+### Dustin
+- Find example websites for inspiration
+- Schema/Model implementation
+- DB import
+- Mongoose connection
+- Build Database
+- Build server
+- error handling
+- PUT image
+- Image gallery import into HTML
+- README draft
+
+### Aidan
+- Find example websites for inspiration
+- Build out JSON endpoints
+- POST subscribers / sub form set up
+- Build Database
+- Build Server
+- Error handling
+- Connect sub page form to back-end
+- Single image page render for each image.
+- admin.js (fetch method and foreach loop to display sub list)
 
 ## Description
 
 ### Rendered HTML Endpoints
 The following HTML endpoints can be found on our site:
-- index (/) : Splash page with company logo and link to the gallery.
-- gallery (/gallery) : displays 12 images.
-- single image (/gallery/:id) : Images on the gallery page can be clicked to navigate to the single image page for each.
-- team (/team) : Displays a list of TEAM TONY, image and descriptions included.
-- admin (/admin) : Displays a list of current subscribers.
+- Index (/) - Splash page with company logo and link to the gallery.
+- Gallery (/gallery) - Displays 12 images.
+  - 'id' utilized by click handler to direct to single image page.
+- Single image (/gallery/:id) - Images on the gallery page can be clicked to navigate to the single image page for each.
+- Team (/team) - Displays a list of TEAM TONY, image and descriptions included.
+- Admin (/admin) - Displays a list of current subscribers.
 
 All pages are rendered via EJS in the views directory. Partials: 'head', 'header', 'footer', and 'nav' are included in each page.
 

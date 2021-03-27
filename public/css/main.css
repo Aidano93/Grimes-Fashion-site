@@ -259,6 +259,9 @@ form {
     padding-top: 1.5rem;
     padding-bottom: 1rem;
   }
+  form label {
+    display: none;
+  }
   #sub {
     min-width: 134.2px;
   }

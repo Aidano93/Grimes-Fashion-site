@@ -286,6 +286,10 @@ form {
   form {
     padding-top: 1.5rem;
     padding-bottom: 1rem;
+
+    label {
+      display: none;
+    }
   }
 
   #sub {

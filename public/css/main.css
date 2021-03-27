@@ -283,7 +283,11 @@ form button {
     min-width: 134.2px;
   }
   /* TEAM/MEMBER */
-  figure {
+  .member {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .member figure {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto;
@@ -294,28 +298,28 @@ form button {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  figure h2 {
+  .member figure h2 {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: name;
   }
-  figure h3 {
+  .member figure h3 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: title;
   }
-  figure a {
+  .member figure a {
     display: -ms-grid;
     display: grid;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: image;
   }
-  figure a:hover {
+  .member figure a:hover {
     background-color: #F29E28;
     opacity: 0.5;
   }
-  figure a img {
+  .member figure a img {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: image;
@@ -323,7 +327,7 @@ form button {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  figure figcaption {
+  .member figure figcaption {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: bio;

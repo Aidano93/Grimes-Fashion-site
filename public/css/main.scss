@@ -213,7 +213,29 @@ footer {
 form {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
+
+  fieldset {
+    display: grid;
+
+    legend {
+      font-family: $normal-font;
+    }
+
+    input {
+      display: block;
+
+      max-width: 600px;
+
+      justify-self: center;
+
+      padding-bottom: $rem;
+
+      margin-bottom: $rem;
+    }
+  }
 }
+
+
 
 /* GALLERY */
 

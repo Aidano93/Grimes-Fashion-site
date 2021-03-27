@@ -198,6 +198,24 @@ form {
   padding-bottom: 1rem;
 }
 
+form fieldset {
+  display: -ms-grid;
+  display: grid;
+}
+
+form fieldset legend {
+  font-family: "Nunito", sans-serif;
+}
+
+form fieldset input {
+  display: block;
+  max-width: 600px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 /* GALLERY */
 #gallery {
   display: -ms-grid;

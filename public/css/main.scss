@@ -194,7 +194,6 @@ footer {
 
 #Logo {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
 
   #sub {
     justify-self: end;
@@ -204,15 +203,8 @@ footer {
     margin: 0;
 
     width: 55%;
-  }
 
-  h2 {
-    justify-self: start;
-    align-self: center;
-
-    padding-left: 1rem;
-
-    font-family: $bold-font;
+    justify-self: center;
   }
 }
 

@@ -177,8 +177,6 @@ footer p {
 #Logo {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
 }
 
 #Logo #sub {
@@ -187,16 +185,8 @@ footer p {
   padding-right: 1rem;
   margin: 0;
   width: 55%;
-}
-
-#Logo h2 {
-  -ms-grid-column-align: start;
-      justify-self: start;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  padding-left: 1rem;
-  font-family: "Oswald", sans-serif;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .subbing {

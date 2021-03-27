@@ -43,7 +43,7 @@ A multi-page, database-driven product website using Express, EJS & Mongoose depl
 - Mongoose connection
 - Build Database
 - Build server
-- error handling
+- Error handling
 - PUT image
 - Image gallery import into HTML
 - README draft
@@ -116,3 +116,6 @@ A button was also included with a link to Ton'y fabulous 2021 fashion collection
 - [Jon Tyson](https://unsplash.com/@jontyson)
 - [Sour Moha](https://unsplash.com/@sour_moha)
   - [Unsplash License](https://unsplash.com/license)
+
+- [Tony Grimes](https://github.com/acidtone)
+  - For his pretty face.

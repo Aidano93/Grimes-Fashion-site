@@ -3,37 +3,41 @@
   /* change default behaviour of `margin: auto` below */
   background-image: url("../images/hao-wang-pVq6YhmDPtk-unsplash-blur.jpg");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-position: center;
   text-align: center;
-  
-  
+
+
   min-height: 50vh;
 }
 
 button {
   display: block;
-  
+
   height: 50px;
   width: 300px;
-  background:red;
+  background: red;
   color: white;
-  
+
   border: 2px solid rgba(33, 68, 72, 0.59);
   border-radius: 50px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  
+
   font-size: 1.5rem;
   padding: 0px;
+
+  cursor: pointer;
 }
+
 /* logo styles */
 .logotext {
-width: 25%; height: auto;
-filter: invert(82%) sepia(34%) saturate(5962%) hue-rotate(344deg) brightness(104%) contrast(90%);
-margin-left: auto;
-margin-right: auto;
+  width: 25%;
+  height: auto;
+  filter: invert(82%) sepia(34%) saturate(5962%) hue-rotate(344deg) brightness(104%) contrast(90%);
+  margin-left: auto;
+  margin-right: auto;
 
 
 
@@ -41,7 +45,7 @@ margin-right: auto;
 
 .tagline {
   margin: 20px;
-  font-size:  32px;
+  font-size: 32px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -50,9 +54,9 @@ margin-right: auto;
 
 .logo {
   text-align: center;
-  width: 25%; height: auto;
+  width: 25%;
+  height: auto;
   justify-content: center;
-  
+
   margin-top: 3rem;
-  }
- 
+}

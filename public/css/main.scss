@@ -7,6 +7,7 @@ sans-serif;
 $light-colour: #FFF;
 $dark-colour: #000;
 $accent-colour: #F29E28;
+$rem : 0.5rem;
 
 /* PARTIALS */
 
@@ -22,11 +23,11 @@ ul {
   display: grid;
   grid-template-columns: repeat(5, auto);
 
-  padding: 0.5rem;
+  padding: $rem;
 
   border-bottom: 2px solid $dark-colour;
 
-  margin: 0.5rem;
+  margin: $rem;
 
   .grimes {
     justify-self: start;
@@ -36,7 +37,7 @@ ul {
     justify-self: end;
 
     a {
-      padding: 0.5rem;
+      padding: $rem;
 
 
       text-decoration: none;
@@ -70,9 +71,9 @@ label {
 
   text-align: center;
 
-  margin: 0.5rem;
+  margin: $rem;
 
-  padding: 0.5rem;
+  padding: $rem;
 
   min-height: 30vh;
 
@@ -83,7 +84,7 @@ label {
   h1 {
     margin: 0;
 
-    padding: 0.5rem;
+    padding: $rem;
   }
 
   h2 {
@@ -214,7 +215,7 @@ form {
 
     border: 2px solid $dark-colour;
 
-    margin: 0.5rem;
+    margin: $rem;
 
 
     .card-img {
@@ -224,7 +225,7 @@ form {
       justify-self: center;
       align-self: center;
 
-      margin: 0.5rem;
+      margin: $rem;
 
       &:hover {
         cursor: pointer;
@@ -251,7 +252,7 @@ form {
 
     border: 2px solid $dark-colour;
 
-    margin: 0.5rem;
+    margin: $rem;
 
 
     .single-img {
@@ -261,7 +262,7 @@ form {
       justify-self: center;
       align-self: center;
 
-      margin: 0.5rem;
+      margin: $rem;
     }
 
     figcaption {
@@ -284,8 +285,8 @@ form {
 
     width: 15rem;
 
-    margin: 0.5rem;
-    padding: 0.5rem;
+    margin: $rem;
+    padding: $rem;
 
     .sub-name {
       justify-self: center;
@@ -313,7 +314,7 @@ form {
 
     li {
 
-      padding: 0.5rem;
+      padding: $rem;
     }
   }
 
@@ -333,7 +334,7 @@ form {
     z-index: 1;
 
     padding-right: 0.7rem;
-    padding-top: 0.5rem;
+    padding-top: $rem;
 
     cursor: pointer;
   }

@@ -221,6 +221,7 @@ form {
 
 #gallery .card .card-img:hover {
   cursor: pointer;
+  opacity: 0.5;
 }
 
 #gallery .card figcaption {

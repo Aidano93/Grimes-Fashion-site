@@ -144,7 +144,7 @@ figure {
     display: grid;
     grid-area: image;
 
-    min-width: 40rem;
+    // min-width: 40rem;
 
     &:hover {
       color: $accent-colour;
@@ -154,7 +154,7 @@ figure {
     img {
       grid-area: image;
 
-      max-width: 50%;
+      width: 55%;
 
       justify-self: center;
 
@@ -303,9 +303,6 @@ form {
   #sub {
     min-width: 134.2px;
   }
-}
-
-@media screen and (max-width: 736px) {
 
   /* TEAM/MEMBER */
 
@@ -333,14 +330,14 @@ form {
       grid-area: image;
 
       &:hover {
-        color: $accent-colour;
+        background-color: $accent-colour;
         opacity: 0.5;
       }
 
       img {
         grid-area: image;
 
-        max-width: 40%;
+        min-width: 134.2px;
 
         justify-self: center;
       }

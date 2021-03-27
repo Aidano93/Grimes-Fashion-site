@@ -134,7 +134,6 @@ figure a {
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: image;
-  min-width: 40rem;
 }
 
 figure a:hover {
@@ -147,7 +146,7 @@ figure a img {
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: image;
-  max-width: 50%;
+  width: 55%;
   -ms-grid-column-align: center;
       justify-self: center;
   padding-top: 1rem;
@@ -283,9 +282,6 @@ form button {
   #sub {
     min-width: 134.2px;
   }
-}
-
-@media screen and (max-width: 736px) {
   /* TEAM/MEMBER */
   figure {
     display: -ms-grid;
@@ -316,14 +312,14 @@ form button {
     grid-area: image;
   }
   figure a:hover {
-    color: #F29E28;
+    background-color: #F29E28;
     opacity: 0.5;
   }
   figure a img {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: image;
-    max-width: 40%;
+    min-width: 134.2px;
     -ms-grid-column-align: center;
         justify-self: center;
   }

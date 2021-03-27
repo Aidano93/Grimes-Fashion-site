@@ -15,10 +15,8 @@ fetch('/api/v0/gallery')
   })
   .then((responseJson) =>{
     const imgArray = responseJson;
-    console.log(imgArray);
-    // add a forEach loop utilizing imgArray to create a function called pic
+    // console.log(imgArray);
     imgArray.forEach((pic) => {
-      // populate containerHTML via the pic function
       containerHTML += 
       `<figure class="card">
       <img class="card-img" src="${pic.imageSrc}" alt="${pic.title}"

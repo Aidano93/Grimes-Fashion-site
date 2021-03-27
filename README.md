@@ -53,7 +53,7 @@ A multi-page, database-driven product website using Express, EJS & Mongoose depl
 -Splash page on index
 -Greensock animation
 -CSS for fancy feature
--Error(s) page
+-Index, Gallery, Error(s) page
 -Team Charter README
 
 

@@ -232,6 +232,22 @@ form {
   }
 }
 
+/* GALLERY */
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  .card {
+    width: 300px;
+
+    .card-image {
+      width: 55%;
+    }
+  }
+}
+
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 42.7rem) {

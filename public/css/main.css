@@ -231,6 +231,22 @@ form fieldset button {
   grid-area: button;
 }
 
+/* GALLERY */
+#gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#gallery .card {
+  width: 300px;
+}
+
+#gallery .card .card-image {
+  width: 55%;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 42.7rem) {
   /* HAMBURGER MENU */

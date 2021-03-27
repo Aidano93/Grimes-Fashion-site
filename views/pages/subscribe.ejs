@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
   <%- include('../partials/head') %>
-  <header>
-    <%= siteTitle %>
-  </header>
 </head>
 <body>
+  <%- include ('../partials/nav')%>
+  <%- include ('../partials/header')%>
   <div id ="Logo">
     <img class="logo" src="images/TonyGrimes.svg" alt="face of the company logo"> 
   </div>
@@ -20,7 +19,6 @@
     </form>
     </div>
     </section>
-  
-  
+    <%- include ('../partials/footer')%>
 </body>
 </html>

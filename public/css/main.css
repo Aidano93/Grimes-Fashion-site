@@ -114,10 +114,9 @@ footer p {
 
 .member-figure h2 {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: name;
 }
 
@@ -196,7 +195,7 @@ form fieldset {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-      grid-template-areas: "label button" "input button";
+      grid-template-areas: "label label" "name button" "email button";
 }
 
 form fieldset label {
@@ -206,20 +205,27 @@ form fieldset label {
 form fieldset p {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: label;
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
-form fieldset input {
+form fieldset #name {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: input;
+  grid-area: name;
+}
+
+form fieldset #email {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: email;
   padding-left: 0.5rem;
 }
 
 form fieldset button {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: button;
@@ -258,28 +264,39 @@ form fieldset button {
   }
   /* SUBSCRIBE */
   form {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  form fieldset {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-        grid-template-areas: "label" "input" "button";
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "label" "name" "email" "button";
   }
-  form p {
+  form fieldset label {
+    display: none;
+  }
+  form fieldset p {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: label;
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  form input {
+  form fieldset #name {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
-    grid-area: input;
+    grid-area: name;
   }
-  form button {
-    -ms-grid-row: 3;
+  form fieldset #email {
+    grid-area: input;
+    padding-left: 0.5rem;
+  }
+  form fieldset button {
+    -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: button;
   }

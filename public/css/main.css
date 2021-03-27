@@ -271,7 +271,8 @@ form {
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
       grid-template-areas: "label button" "input button";
-  padding-top: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 form label {

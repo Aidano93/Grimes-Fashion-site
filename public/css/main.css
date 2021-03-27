@@ -7,62 +7,6 @@
           box-sizing: border-box;
 }
 
-.ham {
-  position: fixed;
-  z-index: 100;
-  top: 1rem;
-  right: 1rem;
-  width: 3rem;
-  height: 3rem;
-  border: 1px solid #000;
-  background: #FFF;
-  cursor: pointer;
-}
-
-.xIcon {
-  display: none;
-}
-
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100vh;
-  background: black;
-  color: white;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
-  list-style: none;
-  padding-top: 4rem;
-}
-
-.menu li {
-  padding: 1rem 0;
-}
-
-.menu .menuLink {
-  display: inline;
-  font-size: 2rem;
-  color: white;
-  text-decoration: none;
-}
-
-.menu .menuLink:hover {
-  text-decoration: underline;
-}
-
-.showMenu {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
 .hero {
   display: -ms-grid;
   display: grid;
@@ -167,37 +111,6 @@ figure figcaption {
   grid-area: bio;
 }
 
-@media screen and (max-width: 42.7rem) {
-  .nav-wrapper [type=checkbox] {
-    display: none;
-  }
-  .nav-menu {
-    display: none;
-  }
-  #toggle:checked ~ * ~ .nav-menu {
-    display: block;
-  }
-  #hamburger {
-    z-index: 1;
-    padding-right: 0.7rem;
-    padding-top: 0.5rem;
-    cursor: pointer;
-  }
-  label {
-    position: absolute;
-    display: inline-block;
-    right: 0;
-  }
-  nav ul {
-    display: block;
-    text-align: center;
-    padding: 1rem;
-  }
-  nav li {
-    padding: 0.5rem;
-  }
-}
-
 @media screen and (max-width: 736px) {
   figure {
     display: -ms-grid;
@@ -292,5 +205,62 @@ form button {
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: button;
+}
+
+/* HAMBURGER */
+.ham {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #000;
+  background: #FFF;
+  cursor: pointer;
+}
+
+.xIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  color: white;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.menu li {
+  padding: 1rem 0;
+}
+
+.menu .menuLink {
+  display: inline;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.menu .menuLink:hover {
+  text-decoration: underline;
+}
+
+.showMenu {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 /*# sourceMappingURL=main.css.map */

@@ -8,6 +8,7 @@ $light-colour: #FFF;
 $dark-colour: #000;
 $accent-colour: #F29E28;
 
+/* PARTIALS */
 
 * {
   font-family: $normal-font;
@@ -95,6 +96,24 @@ nav {
   }
 }
 
+footer {
+  text-align: center;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  border-top: 2px solid $dark-colour;
+
+  p {
+    margin: 0;
+  }
+}
+
+/* MEMBER PAGE */
+
 section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(736px, 1fr));
@@ -146,22 +165,6 @@ figure {
     grid-area: bio;
   }
 
-}
-
-footer {
-  text-align: center;
-
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-
-  margin-left: 1rem;
-  margin-right: 1rem;
-
-  border-top: 2px solid $dark-colour;
-
-  p {
-    margin: 0;
-  }
 }
 
 @media screen and (max-width: 42.7rem) {
@@ -250,5 +253,41 @@ footer {
     figcaption {
       grid-area: bio;
     }
+  }
+}
+
+/* SUBSCRIBE PAGE */
+
+#Logo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  #sub {
+    justify-self: end;
+  }
+
+  h2 {
+    justify-self: start;
+  }
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "label button"
+    "input button";
+
+  label {
+    grid-area: label;
+  }
+
+  input {
+    grid-area: input;
+  }
+
+  button {
+    grid-area: button;
   }
 }

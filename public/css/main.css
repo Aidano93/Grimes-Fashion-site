@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@700&display=swap");
+/* PARTIALS */
 * {
   font-family: "Cabin", sans-serif;
 }
@@ -77,6 +78,20 @@ nav a:hover {
   margin: 0;
 }
 
+footer {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-top: 2px solid #000;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* MEMBER PAGE */
 section {
   display: -ms-grid;
   display: grid;
@@ -140,19 +155,6 @@ figure figcaption {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: bio;
-}
-
-footer {
-  text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  border-top: 2px solid #000;
-}
-
-footer p {
-  margin: 0;
 }
 
 @media screen and (max-width: 42.7rem) {
@@ -230,5 +232,52 @@ footer p {
     -ms-grid-column: 1;
     grid-area: bio;
   }
+}
+
+/* SUBSCRIBE PAGE */
+#Logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#Logo #sub {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+#Logo h2 {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "label button" "input button";
+}
+
+.form label {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: label;
+}
+
+.form input {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: input;
+}
+
+.form button {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: button;
 }
 /*# sourceMappingURL=main.css.map */

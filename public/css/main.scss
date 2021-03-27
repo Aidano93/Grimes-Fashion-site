@@ -299,6 +299,28 @@ form {
   }
 }
 
+/* ERROR */
+
+.wrapper {
+  display: grid;
+
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  img {
+    justify-self: center;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 42.7rem) {

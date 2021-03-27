@@ -289,6 +289,29 @@ form {
       justify-self: center;
 }
 
+/* ERROR */
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
+.wrapper h1 {
+  text-align: center;
+}
+
+.wrapper h2 {
+  text-align: center;
+}
+
+.wrapper img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.wrapper p {
+  text-align: center;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 42.7rem) {
   /* HAMBURGER MENU */

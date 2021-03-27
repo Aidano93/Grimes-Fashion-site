@@ -197,39 +197,6 @@ footer {
 form {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
-
-  fieldset {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-      "label label"
-      "name button"
-      "email button";
-
-    label {
-      display: none;
-    }
-
-    p {
-      grid-area: label;
-
-      justify-self: center;
-    }
-
-    #name {
-      grid-area: name;
-    }
-
-    #email {
-      grid-area: email;
-      padding-left: 0.5rem;
-    }
-
-    button {
-      grid-area: button;
-    }
-  }
 }
 
 /* GALLERY */
@@ -319,40 +286,6 @@ form {
   form {
     padding-top: 1.5rem;
     padding-bottom: 1rem;
-
-    fieldset {
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: repeat(4, 1fr);
-      grid-template-areas:
-        "label"
-        "name"
-        "email"
-        "button";
-
-      label {
-        display: none;
-      }
-
-      p {
-        grid-area: label;
-
-        justify-self: center;
-      }
-
-      #name {
-        grid-area: name;
-      }
-
-      #email {
-        grid-area: email;
-        padding-left: 0.5rem;
-      }
-
-      button {
-        grid-area: button;
-      }
-    }
   }
 
   #sub {

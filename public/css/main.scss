@@ -274,12 +274,22 @@ form {
 
 .subscribers {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 
   .admin {
+    display: grid;
     justify-self: center;
 
     border: 2px solid $dark-colour;
+
+    width: 15rem;
+
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+    .sub-name {
+      justify-self: center;
+    }
   }
 }
 

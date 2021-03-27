@@ -263,14 +263,24 @@ form {
 .subscribers {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
 .subscribers .admin {
+  display: -ms-grid;
+  display: grid;
   -ms-grid-column-align: center;
       justify-self: center;
   border: 2px solid #000;
+  width: 15rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.subscribers .admin .sub-name {
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 /* MEDIA QUERIES */

@@ -105,10 +105,10 @@ footer p {
 .member-figure {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 500px 235.9px;
-      grid-template-columns: 500px 235.9px;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  -ms-grid-columns: 420px 235.9px;
+      grid-template-columns: 420px 235.9px;
+  -ms-grid-rows: auto 3rem;
+      grid-template-rows: auto 3rem;
       grid-template-areas: "image name" "image title" "image bio";
   border-bottom: 2px solid #000;
   padding-bottom: 1rem;
@@ -124,6 +124,8 @@ footer p {
   -ms-grid-column: 2;
   grid-area: name;
   font-family: "Oswald", sans-serif;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .member-figure h3 {
@@ -131,6 +133,8 @@ footer p {
   -ms-grid-column: 2;
   grid-area: title;
   font-family: "Nunito", sans-serif;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .member-figure a {
@@ -165,6 +169,8 @@ footer p {
   -ms-grid-column: 2;
   grid-area: bio;
   font-family: "Nunito", sans-serif;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 /* SUBSCRIBE PAGE */

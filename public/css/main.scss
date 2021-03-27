@@ -126,8 +126,8 @@ footer {
 
 .member-figure {
   display: grid;
-  grid-template-columns: 500px 235.9px;
-  grid-template-rows: auto;
+  grid-template-columns: 420px 235.9px;
+  grid-template-rows: auto 3rem;
   grid-template-areas:
     "image name"
     "image title"
@@ -144,12 +144,16 @@ footer {
     grid-area: name;
 
     font-family: $bold-font;
+
+    justify-self: center;
   }
 
   h3 {
     grid-area: title;
 
     font-family: $normal-font;
+
+    justify-self: center;
   }
 
   a {
@@ -179,6 +183,8 @@ footer {
     grid-area: bio;
 
     font-family: $normal-font;
+
+    justify-self: center;
   }
 
 }
@@ -244,8 +250,6 @@ footer {
   }
 
 }
-
-
 
 
 /* GALLERY */

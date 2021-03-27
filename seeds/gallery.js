@@ -14,7 +14,7 @@ module.exports = [
   {
     id: 2,
     title: 'The Essentials',
-    description: 'Make sure everyone sees you in the MUST HAVE spring accesories ',
+    description: 'Make sure everyone sees you in the MUST HAVE spring accessories ',
     width: 2304,
     height: 4096, 
     pathURL: 'https://unsplash.com/photos/W-7k72ThEr0',

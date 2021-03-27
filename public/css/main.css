@@ -262,7 +262,7 @@ form {
       grid-template-areas: "label button" "input button";
 }
 
-form label {
+form .label {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: label;

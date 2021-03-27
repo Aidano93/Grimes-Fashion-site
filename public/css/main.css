@@ -259,6 +259,20 @@ form {
   text-align: center;
 }
 
+/* ADMIN */
+.subscriber {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.subscriber .admin {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border: 2px solid #000;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 42.7rem) {
   /* HAMBURGER MENU */

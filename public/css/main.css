@@ -30,6 +30,7 @@ ul li {
 ul li a {
   padding: 0.5rem;
   font-family: "Oswald", sans-serif;
+  font-size: 28px;
   text-decoration: none;
   color: #000;
 }

@@ -378,6 +378,7 @@ footer p {
     padding-right: 0.7rem;
     padding-top: 0.5rem;
     cursor: pointer;
+    color: #808080;
   }
   label {
     position: absolute;

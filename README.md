@@ -9,11 +9,9 @@
 - [Dustin Shulz](https://github.com/cowtowndusty)
 - [Aidan O'Reilly](https://github.com/Aidano93)
 
-
-
+## Overview
 
 A multi-page, database-driven product website using Express, EJS & Mongoose deployed to Heroku and MongoDB Atlas.
-
 
 ## Group Charter
 
@@ -37,23 +35,23 @@ A multi-page, database-driven product website using Express, EJS & Mongoose depl
 - Team Charter README
 
 ### Dustin
-- Find example websites for inspiration
 - Schema/Model implementation
 - DB import
 - Mongoose connection
-- Build Database
+- Build database
 - Build server
 - Error handling
 - PUT image
 - Image gallery import into HTML
 - README draft
+- Deployed to Heroku
 
 ### Aidan
 - Find example websites for inspiration
 - Build out JSON endpoints
 - POST subscribers / sub form set up
-- Build Database
-- Build Server
+- Build database
+- Build server
 - Error handling
 - Connect sub page form to back-end
 - Single image page render for each image.
@@ -75,7 +73,7 @@ All pages are rendered via EJS in the views directory. Partials: 'head', 'header
 
 Routes for each HTML endpoint can be found in the index.js file of the routes directory.
 
-### Schema/model
+### Schema/Model
 The following schemas are defined and can be found in the models directory:
 - gallery.js
 - member.js
@@ -93,7 +91,7 @@ An API was created and can be found in the routes directory. This API serves the
 
 The fetch() method is utilized in the client side javascript files to pull in our data from the database and put it on their respective pages. client.js serves the gallery, member.js serves the team info, and subscriber.js serves the sub list.
 
-## Fancy Feature
+### Fancy Feature
 The fancy feature is a hero section on the home page that incorporates the Greensock animation framework.
 
 Two SVG files were made (logo & logotext) and animated to scale up from zero to full opacity and "bounce" into place. A delay was placed on the text svg to offset the effects and make the overall animation more visually appealing. To acheive this animation required multiple effects to be stacked. The first effect called for the svg's to be hidden before beginning the animation, the second called for the actual scaling animation.

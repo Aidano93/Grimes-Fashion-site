@@ -1,7 +1,7 @@
 const express = require('express');
-const Gallerie = require('../../models/gallery.js')
-const Member = require('../../models/member.js')
-const Subscriber = require('../../models/subscriber.js')
+const Gallerie = require('../../models/gallery.js');
+const Member = require('../../models/member.js');
+const Subscriber = require('../../models/subscriber.js');
 
 
 const router = express.Router();
@@ -16,7 +16,7 @@ router.get('/gallery', async (req, res, next) => {
   } catch(err) {
     return next(err)
   }
-})
+});
 
 //team members JSON
 router.get('/members', (req, res) => {
@@ -42,4 +42,4 @@ router.get('/subscribers', (req, res) => {
   })
 });
 
-module.exports = router
+module.exports = router;

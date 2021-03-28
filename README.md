@@ -98,7 +98,7 @@ Two SVG files were made (logo & logotext) and animated to scale up from zero to 
 
 A tagline was also incorporated into the feature. This object had to first be given an opacity and delay effect so it remained hidden while the logo and logo text finished their animation durations. Once they finished the tagline was then triggered to begin it's slide in animation with a bounce ending. 
 
-A button was also included with a link to Ton'y fabulous 2021 fashion collection.
+A button was also included with a link to Tony's fabulous 2021 fashion collection.
 
 ## Attributions:
 - [Roman Shilin](https://unsplash.com/@romashilin)

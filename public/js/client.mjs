@@ -15,7 +15,6 @@ fetch('/api/v0/gallery')
   })
   .then((responseJson) =>{
     const imgArray = responseJson;
-    // console.log(imgArray);
     imgArray.forEach((pic) => {
       containerHTML += 
       `<figure class="card">

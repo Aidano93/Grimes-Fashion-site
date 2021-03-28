@@ -1,7 +1,7 @@
 // dependencies
 const mongoose = require('./connection');
 
-const express = require('express')
+const express = require('express');
 const path = require('path');
 require('dotenv').config();
 const index = require('./routes');
@@ -11,11 +11,11 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // static middleware
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'public')));
 
 // routes middleware
-app.use('/', index)
-app.use('/verify-sub', verifySub)
+app.use('/', index);
+app.use('/verify-sub', verifySub);
 
 // 404
 app.use((req, res, next) => {

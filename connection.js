@@ -6,10 +6,10 @@ mongoose.connect(
   { useUnifiedTopology: true, useNewUrlParser: true },
   )
   .then(function(){
-    console.log('Connected to DB...')
+    console.log('Connected to DB...');
   })
   .catch(function(err){
-    console.log(err)
+    console.log(err);
   });
 
   module.exports = mongoose;

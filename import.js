@@ -1,4 +1,4 @@
-const mongoose = require('./connection.js') 
+const mongoose = require('./connection.js');
 
 // Import seed data
 const galSeed = require(`./seeds/gallery`);
@@ -10,11 +10,11 @@ const Member = require(`./models/Member`);
 const Subscriber = require(`./models/Subscriber`);
 
 Gallery.insertMany(galSeed, function(error, animal) {
-  console.log('Data import completed.')
+  console.log('Data import completed.');
 });
 Member.insertMany(memSeed, function(error, animal) {
-  console.log('Data import completed.')
+  console.log('Data import completed.');
 });
 Subscriber.insertMany(subSeed, function(error, animal) {
-  console.log('Data import completed.')
+  console.log('Data import completed.');
 });

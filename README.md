@@ -1,4 +1,4 @@
-# CPNT262-FINAL: Group Project - Deployed Product/Services Website
+# Grimes Fashion House
 
 - [GH Repo](https://github.com/cowtowndusty/cpnt262-FINAL)
 - [Deployed Heroku URL](https://sait-cpnt262-FINAL.herokuapp.com/)

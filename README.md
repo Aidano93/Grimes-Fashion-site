@@ -1,7 +1,7 @@
 # Grimes Fashion House
 
 - [GH Repo](https://github.com/cowtowndusty/cpnt262-FINAL)
-- [Deployed Heroku URL](https://sait-cpnt262-FINAL.herokuapp.com/)
+- [Deployed Heroku URL](https://grimes-fasion-house.herokuapp.com/)
 
 ## Team Members
 - [Makayla Martineau Raymundo](https://github.com/MakaylaMR)

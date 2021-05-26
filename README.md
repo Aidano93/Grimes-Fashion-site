@@ -1,4 +1,4 @@
-# CPNT262-FINAL: Group Project - Deployed Product/Services Website
+# Grimes Fashion House
 
 - [GH Repo](https://github.com/cowtowndusty/cpnt262-FINAL)
 - [Deployed Heroku URL](https://grimes-fashion-house.herokuapp.com/)
@@ -11,51 +11,7 @@
 
 ## Overview
 
-A multi-page, database-driven product website using Express, EJS & Mongoose deployed to Heroku and MongoDB Atlas.
-
-## Group Charter
-
-### Makayla
-- Find example websites for inspiration
-- Build "Team" ejs template
-- Build "Admin" ejs template
-- Build out partials
-- Created forEach() and used fetch() for "team" page
-- SCSS/CSS
-
-### Joel
-- Find example websites for inspiration
-- Gather 12 images for gallery
-- Gallery and Subscribe page mock-up html
-- SVG creation
-- Splash page on index
-- Greensock animation
-- CSS for fancy feature
-- Index, Gallery, Error(s) page
-- Team Charter README
-
-### Dustin
-- Schema/Model implementation
-- DB import
-- Mongoose connection
-- Build database
-- Build server
-- Error handling
-- PUT image
-- Image gallery import into HTML
-- README draft
-- Deployed to Heroku
-
-### Aidan
-- Find example websites for inspiration
-- Build out JSON endpoints
-- POST subscribers / sub form set up
-- Build database
-- Build server
-- Error handling
-- Connect sub page form to back-end
-- Single image page render for each image.
-- admin.js (fetch method and foreach loop to display sub list)
+A multi-page, database-driven product website utilizing Express, EJS & Mongoose deployed to Heroku and MongoDB Atlas.
 
 ## Description
 
